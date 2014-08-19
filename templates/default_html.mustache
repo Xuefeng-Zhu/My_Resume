@@ -88,8 +88,8 @@
 	</ul>
 	{{/experience}}
 
-	{{#other_projects}}
-	<h2><div class="icon-gear icon-square"></div> ##other_projects##</h2>
+	{{#projects}}
+	<h2><div class="icon-gear icon-square"></div> Projects</h2>
 	<ul>
 		{{#items}}
 		<li>
@@ -109,33 +109,7 @@
 		</li>
 		{{/items}}
 	</ul>
-	{{/other_projects}}
-
-	{{#grad_courses}}
-	<h2><div class="icon-institution icon-square"></div> ##grad_courses##</h2>
-	<table class="table education">
-		{{#rows}}
-		<tr>
-			{{#columns}}
-			<td><a href="{{url}}">{{name}}</a></td>
-			{{/columns}}
-		</tr>
-		{{/rows}}
-	</table>
-	{{/grad_courses}}
-
-	{{#undergrad_courses}}
-	<h2><div class="icon-bookmark icon-square"></div> ##undergrad_courses##</h2>
-	<table class="table education">
-		{{#rows}}
-		<tr>
-			{{#columns}}
-			<td><a href="{{url}}">{{name}}</a></td>
-			{{/columns}}
-		</tr>
-		{{/rows}}
-	</table>
-	{{/undergrad_courses}}
+	{{/projects}}
 
 	{{#research_experience}}
 	<h2><div class="icon-edit icon-square"></div> ##research_experience##</h2>
