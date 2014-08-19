@@ -112,7 +112,7 @@
 	{{/experience}}
 
 	{{#research_experience}}
-	<h2><div class="icon-edit icon-square"></div> ##research_experience##</h2>
+	<h2><div class="icon-institution icon-square"></div> ##research_experience##</h2>
 	<ul>
 		{{#items}}
 		<li>
@@ -132,28 +132,23 @@
 	<h2><div class="icon-edit icon-square"></div> ##papers##</h2>
 	<ul>
 		{{#items}}
-		<li>{{authors}} 
-			<a href="{{url}}">{{title}},</a> 
-			 {{{misc}}}.
+		<li>
+			<a href="{{url}}">{{title}}</a> 
+			<p style="float: left">{{authors}}</p> 
+			<p style="float: right">{{{misc}}}</p>
 		</li>
 		{{/items}}
 	</ul>
 	{{/papers}}
-
-	{{#memberships}}
-	<h2><div class="icon-globe icon-square"></div> ##memberships##</h2>
-	<ul>
-		{{#committees}}
-		<li>{{{.}}}</li>
-		{{/committees}}
-	</ul>	
-	{{/memberships}}
 	
 	{{#extra_curricular}}
-	<h2><div class="icon-music icon-square"></div> ##extra_curricular##</h2>
+	<h2><div class="icon-bookmark icon-square"></div> ##extra_curricular##</h2>
 	<ul>
 		{{#items}}
-		<li>{{{.}}}</li>
+		<li>
+		{{title}}
+		<span class="right">{{date}}</span>
+		</li>
 		{{/items}}
 	</ul>
 	{{/extra_curricular}}

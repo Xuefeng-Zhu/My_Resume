@@ -188,12 +188,6 @@
                 ]
             }]
         },
-        "extra_curricular": {
-            "items": [
-                "Was awarded 2<sup>nd</sup> position in Bionetics, Coding Event, Genesis 09 at IIT Kharagpur.",
-                "Microsoft Student Partner of IIT Kharagpur from the period July 08 – June 09."
-            ]
-        },
         "papers": {
             "items": [{
                 "authors": "Ye Li, Imran Haddish, Xuefeng Zhu, Yoshinori Satoh, Rizwan-uddin",
@@ -201,10 +195,17 @@
                 "misc": "ASEE, Nov. 2013"
             }]
         },
-        "memberships": {
-            "committees": [
-                "Member of the ACM awesomest humans secret group, 2008-present"
-            ]
+        "extra_curricular": {
+            "items": [{
+                "title": "Second Place at CS241 Memory Allocation Contest",
+                "date": "Feb. 2014"
+            },{
+                "title": "Best Mashup at Library Mobile Web App Code Camp",
+                "date": "Nov. 2013"
+            },{
+                "title": "Finalist Award at Library Mobile App Competition",
+                "date": "Feb. 2013"
+            }]
         }
     }
 }
