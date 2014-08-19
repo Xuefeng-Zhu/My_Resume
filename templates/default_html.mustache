@@ -93,7 +93,7 @@
 	<ul>
 		{{#items}}
 		<li><b>{{title}}</b>,{{{organisation}}}{{#location}}, {{{location}}}{{/location}}
-			<span class="right">({{from}} – {{to}})</span>
+			<span class="right">({{from}} - {{to}})</span>
 			<ul>
 				{{#details}}
 				<li>{{{.}}}</li>
@@ -116,8 +116,9 @@
 	<ul>
 		{{#items}}
 		<li>
-			<b>{{title}}</b>, {{{organisation}}}
-			<span class="right">({{from}} – {{to}})</span>
+			<b>{{title}}</b> 
+			<span class="right">({{from}} - {{to}})</span>
+			<p style="font-style: italic; margin-bottom:0">Supervised by: {{{supervisor}}}</p>
 			<ul>
 				{{#points}}
 				<li>{{{.}}}</li>
@@ -133,7 +134,7 @@
 	<ul>
 		{{#items}}
 		<li>
-			<a href="{{url}}">{{title}}</a> 
+			<p style="font-weight:bold; margin-bottom:0">{{title}}</p> 
 			<p style="float: left">{{authors}}</p> 
 			<p style="float: right">{{{misc}}}</p>
 		</li>
