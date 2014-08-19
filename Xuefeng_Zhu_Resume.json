@@ -215,6 +215,9 @@
                 "Listening music",
                 "Watching funny videos"
             ]
+        },
+        "contact":{
+            "src": "../contact.png"
         }
     }
 }
