@@ -90,7 +90,7 @@
                     ]
                 }
             }, {
-                "title": "Undergrad Researcher",
+                "title": "Software Developer Engineer",
                 "organisation": "University of Illinois",
                 "location": "Urbana, IL",
                 "from": "May, 2014",
@@ -177,29 +177,14 @@
         },
         "research_experience": {
             "items": [{
-                "title": "Undergraduate project",
-                "organisation": "Sanyog Lab, IIT Kharagpur",
-                "from": "Jul. 2008",
-                "to": "May 2009",
+                "title": "Healthcare Information System For Mining Drug Side Effects",
+                "organisation": "",
+                "from": "Feb. 2014",
+                "to": "Present",
                 "points": [
-                    "Designing and Formal modelling of embedded systems for project Sanyog.",
-                    "Skills Developed: Low level system design, theorem verification using Prolog and Coq"
-                ]
-            }, {
-                "title": "Summer Intern",
-                "organisation": "Network Systems Lab, IIT Kharagpur",
-                "from": "May 2008",
-                "to": "Jun. 2008",
-                "points": [
-                    "Design and simulation of currently published Pull-based Freshness Schemes in C++."
-                ]
-            }, {
-                "title": "Summer Intern",
-                "organisation": "Telemedicine Lab, IIT Kharagpur",
-                "from": "May 2007",
-                "to": "Jun. 2007",
-                "points": [
-                    "Web based medical image browsing and annotation tools for PDA devices in .NET platform."
+                    "Organized and lead the team work",
+                    "Designed the functionalities and user interface of the system",
+                    "Built the website for demonstrating the system using Angularjs and Flask"
                 ]
             }]
         },
@@ -211,17 +196,9 @@
         },
         "papers": {
             "items": [{
-                "authors": "Michl Dugls, Mrclo Dsconi",
-                "title": "Some exotic dummy title like potentials arising from string compactifications",
-                "misc": "arXiv: 1206.1885, June 2012"
-            }]
-        },
-        "patents": {
-            "items": [{
-                "patent_id": "US Patent X,XXX,634",
-                "url": "",
-                "issuance_date": "September 15, 1992",
-                "title": "Another exotic title like bed cover with an inflatable human form."
+                "authors": "Ye Li, Imran Haddish, Xuefeng Zhu, Yoshinori Satoh, Rizwan-uddin",
+                "title": "A 3D, Interactive Virtual Instruction Laboratory And A Virtual Model of A Reactor Control Room",
+                "misc": "ASEE, Nov. 2013"
             }]
         },
         "memberships": {
