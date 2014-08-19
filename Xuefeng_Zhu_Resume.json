@@ -1,0 +1,222 @@
+{
+    "settings": {
+        "icons": true
+    },
+    "firstname": "Xuefeng",
+    "familyname": "Zhu",
+    "linkedin_id": "xuefeng-zhu",
+    "github_id": "Xuefeng-Zhu",
+    "bio_data": {
+        "email": "xzhu15@illinois.edu",
+        "phone": "+1 (217) 607-6680",
+        "github": "github.com/Xuefeng-Zhu",
+        "stars": ["Python", "Javascript", "Funny Video"],
+        "summary": {
+            "points": [
+                "Passion about latest technology, and believe computer science make live better",
+                "Love coding, designing, learning, and open source",
+                "Eager to work with aswesome people on awesome products"
+            ]
+        },
+        "education": {
+            "show_gpa": true,
+            "schools": [{
+                "degree": "Bachelor",
+                "major": "Computer Science",
+                "institution": "University of Illinois at Urbana-Champaign",
+                "graduation_year": 2016,
+                "gpa": "4/4"
+            }]
+        },
+        "skills": {
+            "details": [{
+                "type": "My Favoraite Languages",
+                "items": [
+                    "Python",
+                    "Javascript",
+                    "C"
+                ]
+            }, {
+                "type": "Other Languages",
+                "items": [
+                    "Go",
+                    "Java",
+                    "C#",
+                    "C++",
+                    "HTML",
+                    "XML",
+                    "CSS",
+                    "SQL",
+                    "Pascal",
+                    "MATLAB",
+                    "Verilog",
+                    "MIPS"
+                ]
+            }, {
+                "type": "Experience With",
+                "items": [
+                    "Angular",
+                    "jQuery",
+                    "Flask",
+                    "Jinja2",
+                    "Express",
+                    "BootStrap",
+                    "Android",
+                    "Unity3D",
+                    "Heroku"
+                ]
+            }]
+        },
+        "acad_achievements": {
+            "items": [
+                "Was among the top 5% in the institute merit list of the undergraduate batch at IIT Kharagpur.",
+                "Secured 383rd Rank in IIT-JEE 2005, an exam conducted by Indian Institute of Technology(s)."
+            ]
+        },
+        "experience": {
+            "items": [{
+                "title": "Graduate Research Assistant",
+                "organisation": "CTR, UT Austin",
+                "location": "",
+                "from": "Sept. 2013",
+                "to": "Jan. 2014",
+                "details": [
+                    "Developed a common web interface <<http://unitydatabase.com>> to search through different datasets and output aggregate results and ensuring easy pluggability of new datasets."
+                ],
+                "technology_used": {
+                    "tools": [
+                        "Python",
+                        "Django",
+                        "South",
+                        "PostgreSQL"
+                    ]
+                }
+            }, {
+                "title": "SDE II (Software Development Engineer II)",
+                "organisation": "Flipkart",
+                "location": "India",
+                "from": "Apr. 2013",
+                "to": "Jul. 2013",
+                "details": [
+                    "Wrote a ruby gem _Morsel_ to traverse through active record trees to purge old records. It helped in limiting the production database size and keeping the data clean."
+                ]
+            }, {
+                "title": "Software Development Engineer",
+                "organisation": "Flipkart",
+                "location": "India",
+                "from": "Jun. 2011",
+                "to": "Mar. 2013",
+                "details": [
+                    "Was part of a team which developed the warehouse module in RoR framework from scratch. It now scales to around 10X as compared to the ERP system existed.",
+                    "Designed warehouse stock snapshots and stock ledger framework using Pig scripts to make the supply chain system legally compliant."
+                ],
+                "technology_used": {
+                    "tools": [
+                        "Ruby",
+                        "Java",
+                        "Pig",
+                        "Active Records",
+                        "MySQL"
+                    ]
+                }
+            }, {
+                "title": "Software Engineer",
+                "organisation": "IBM Software Labs",
+                "location": "India",
+                "from": "Jul. 2009",
+                "to": "Jun. 2011",
+                "details": [
+                    "Handled high priority issues for JDBC client driver for IBM Informix database.",
+                    "Was awarded Smart CADian award for resolving an obscure deadlock situation, making Informix JDBC driver more robust."
+                ],
+                "technology_used": {
+                    "tools": [
+                        "Java",
+                        "IBM Informix",
+                        "IBM DB2"
+                    ]
+                }
+            }]
+        },
+        "other_projects": {
+            "items": [{
+                "headline": "Designed product _Omerta_, a multi-user chat room application in j2me using Sun Wireless Toolkit platform.",
+                "points": [
+                    "Was awarded 1<sup>st</sup> position for the product in [Envision](http://www.ecell-iitkgp.org/envision.php), Product Innovation Contest, IIT KGP.",
+                    "Was awarded 1<sup>st</sup> position for the product in Javawise, J2ME s/w Development Contest at IIT Kharagpur, 2008 and 2009 continuously."
+                ]
+            }]
+        },
+        "grad_courses": [{
+            "name": "Distributed Computing",
+            "url": "http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/13F/"
+        }, {
+            "name": "Feature Oriented Programming",
+            "url": "http://www.cs.utexas.edu/users/dsb/cs392f"
+        }, {
+            "name": "Multicore Programming",
+            "url": "http://www.cs.utexas.edu/~pingali/CS395T/2013fa"
+        }],
+        "undergrad_courses": [{
+            "name": "Network Systems",
+            "url": "http://www.facweb.iitkgp.ernet.in/~agupta/netlab/"
+        }, {
+            "name": "Graph Theory",
+            "url": "http://cse.iitkgp.ac.in/~agupta/graph/"
+        }],
+        "research_experience": {
+            "items": [{
+                "title": "Undergraduate project",
+                "organisation": "Sanyog Lab, IIT Kharagpur",
+                "from": "Jul. 2008",
+                "to": "May 2009",
+                "points": [
+                    "Designing and Formal modelling of embedded systems for project Sanyog.",
+                    "Skills Developed: Low level system design, theorem verification using Prolog and Coq"
+                ]
+            }, {
+                "title": "Summer Intern",
+                "organisation": "Network Systems Lab, IIT Kharagpur",
+                "from": "May 2008",
+                "to": "Jun. 2008",
+                "points": [
+                    "Design and simulation of currently published Pull-based Freshness Schemes in C++."
+                ]
+            }, {
+                "title": "Summer Intern",
+                "organisation": "Telemedicine Lab, IIT Kharagpur",
+                "from": "May 2007",
+                "to": "Jun. 2007",
+                "points": [
+                    "Web based medical image browsing and annotation tools for PDA devices in .NET platform."
+                ]
+            }]
+        },
+        "extra_curricular": {
+            "items": [
+                "Was awarded 2<sup>nd</sup> position in Bionetics, Coding Event, Genesis 09 at IIT Kharagpur.",
+                "Microsoft Student Partner of IIT Kharagpur from the period July 08 – June 09."
+            ]
+        },
+        "papers": {
+            "items": [{
+                "authors": "Michl Dugls, Mrclo Dsconi",
+                "title": "Some exotic dummy title like potentials arising from string compactifications",
+                "misc": "arXiv: 1206.1885, June 2012"
+            }]
+        },
+        "patents": {
+            "items": [{
+                "patent_id": "US Patent X,XXX,634",
+                "url": "",
+                "issuance_date": "September 15, 1992",
+                "title": "Another exotic title like bed cover with an inflatable human form."
+            }]
+        },
+        "memberships": {
+            "committees": [
+                "Member of the ACM awesomest humans secret group, 2008-present"
+            ]
+        }
+    }
+}
