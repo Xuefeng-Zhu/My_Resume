@@ -71,73 +71,83 @@
                 ]
             }]
         },
-        "acad_achievements": {
-            "items": [
-                "Was among the top 5% in the institute merit list of the undergraduate batch at IIT Kharagpur.",
-                "Secured 383rd Rank in IIT-JEE 2005, an exam conducted by Indian Institute of Technology(s)."
-            ]
-        },
         "experience": {
             "items": [{
-                "title": "Graduate Research Assistant",
-                "organisation": "CTR, UT Austin",
-                "location": "",
-                "from": "Sept. 2013",
-                "to": "Jan. 2014",
+                "title": "Software Developer Engineer",
+                "organisation": "Dow AgroSciences",
+                "location": "Indianapolis, IN",
+                "from": "May, 2014",
+                "to": "August, 2014",
                 "details": [
-                    "Developed a common web interface <<http://unitydatabase.com>> to search through different datasets and output aggregate results and ensuring easy pluggability of new datasets."
+                    "Collaborated with teammates to develope an administration dashboard",
+                    "Wrote the user and development guideline for the administration dashboard"
                 ],
                 "technology_used": {
                     "tools": [
-                        "Python",
-                        "Django",
-                        "South",
-                        "PostgreSQL"
+                        "Angular",
+                        "jQuery",
+                        "BootStrap",
+                        "WCF Restful",
+                        "Oracle"
                     ]
                 }
             }, {
-                "title": "SDE II (Software Development Engineer II)",
-                "organisation": "Flipkart",
-                "location": "India",
-                "from": "Apr. 2013",
-                "to": "Jul. 2013",
+                "title": "Undergrad Researcher",
+                "organisation": "University of Illinois",
+                "location": "Urbana, IL",
+                "from": "May, 2014",
+                "to": "Present",
                 "details": [
-                    "Wrote a ruby gem _Morsel_ to traverse through active record trees to purge old records. It helped in limiting the production database size and keeping the data clean."
-                ]
-            }, {
-                "title": "Software Development Engineer",
-                "organisation": "Flipkart",
-                "location": "India",
-                "from": "Jun. 2011",
-                "to": "Mar. 2013",
-                "details": [
-                    "Was part of a team which developed the warehouse module in RoR framework from scratch. It now scales to around 10X as compared to the ERP system existed.",
-                    "Designed warehouse stock snapshots and stock ledger framework using Pig scripts to make the supply chain system legally compliant."
+                    "Maintained SIGCOMM2014 websites and built a template system for updating the website",
+                    "Developed a speed test Chrome extension based on Angularjs and Nodejs"
                 ],
                 "technology_used": {
                     "tools": [
-                        "Ruby",
-                        "Java",
-                        "Pig",
-                        "Active Records",
-                        "MySQL"
+                        "Jinja2",
+                        "Google Sheet API",
+                        "Angular",
+                        "Semantic UI",
+                        "Firebase",
+                        "Nodejs",
+                        "Heroku"
                     ]
                 }
             }, {
-                "title": "Software Engineer",
-                "organisation": "IBM Software Labs",
-                "location": "India",
-                "from": "Jul. 2009",
-                "to": "Jun. 2011",
+                "title": "Director of Information",
+                "organisation": "Engineering Council",
+                "location": "Urbana, IL",
+                "from": "April, 2014",
+                "to": "Present",
                 "details": [
-                    "Handled high priority issues for JDBC client driver for IBM Informix database.",
-                    "Was awarded Smart CADian award for resolving an obscure deadlock situation, making Informix JDBC driver more robust."
+                    "Managed and maintained the mailing list and EC web server",
+                    "Improved and redesigned the EC websites"
                 ],
                 "technology_used": {
                     "tools": [
-                        "Java",
-                        "IBM Informix",
-                        "IBM DB2"
+                        "Cpanel",
+                        "HTML",
+                        "PHP",
+                        "MySQL",
+                        "Trello"
+                    ]
+                }
+            }, {
+                "title": "Unity3D Developer and Web Developer",
+                "organisation": "University of Illinois",
+                "location": "Urbana, IL",
+                "from": "April, 2013",
+                "to": "May, 2014",
+                "details": [
+                "Participated in the project design and programming, including building 3D models and writing scripts",
+                "Developed a course website for NPRE100"
+                ],
+                "technology_used": {
+                    "tools": [
+                        "Unity3D",
+                        "C#",
+                        "HTML",
+                        "CSS",
+                        "Javascript"
                     ]
                 }
             }]
