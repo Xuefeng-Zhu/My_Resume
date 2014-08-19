@@ -42,7 +42,7 @@
 		<b style="float: left; margin-bottom: 0">{{institution}}</b>
 		<p style="float: right; margin-bottom: 0">{{year}}</p>
 		<p style="clear:left; float: left; margin-bottom: 0">{{degree}}</p>
-		<i style="float: right; margin-bottom: 0">Comulative GPA: {{gpa}}</i>
+		<i style="float: right; margin-bottom: 0">Cumulative GPA: {{gpa}}</i>
 		{{/schools}}
 		<ul style="clear:both">
 			{{#details}}
@@ -70,7 +70,7 @@
 	<ul>
 		{{#items}}
 		<li>
-			{{{headline}}}
+			<b>{{{headline}}}</b>
 			<ul>
 				{{#points}}
 				<li>{{{.}}}</li>
@@ -92,7 +92,7 @@
 	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
 	<ul>
 		{{#items}}
-		<li>{{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}}
+		<li><b>{{title}}</b>,{{{organisation}}}{{#location}}, {{{location}}}{{/location}}
 			<span class="right">({{from}} – {{to}})</span>
 			<ul>
 				{{#details}}
@@ -116,7 +116,7 @@
 	<ul>
 		{{#items}}
 		<li>
-			{{title}}, {{{organisation}}}
+			<b>{{title}}</b>, {{{organisation}}}
 			<span class="right">({{from}} – {{to}})</span>
 			<ul>
 				{{#points}}

@@ -10,7 +10,7 @@
         "email": "xzhu15@illinois.edu",
         "phone": "+1 (217) 607-6680",
         "github": "github.com/Xuefeng-Zhu",
-        "stars": ["Python", "Javascript", "Funny Video"],
+        "stars": ["Python", "Javascript", "Music"],
         "summary": {
             "points": [
                 "Passion about latest technology, and believe computer science make live better",
@@ -22,12 +22,12 @@
             "schools": [{
                 "degree": "BS in Computer Science",
                 "institution": "University of Illinois at Urbana-Champaign",
-                "year": "2012-2016",
+                "year": "May, 2016",
                 "gpa": "4.00/4.00"
             }],
             "details": [
                 "Dean’s List: Fall 2012, Spring 2013",
-                "James Scholar"
+                "Stay Top 5 for most computer scince courses have taken"
             ]
         },
         "skills": {
@@ -73,17 +73,17 @@
             "items": [{
                 "headline": "Meetup",
                 "points": [
-                    "A web application built with Angularjs and Firebase to help people share and collaborate on events"
+                    "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
                 ]
             }, {
                 "headline": "Google Sheet based SQL Engine",
                 "points": [
-                    "A SQL engine based on Google Sheet letting users store data and run SQL Query"
+                    "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
                 ]
             }, {
                 "headline": "Ischedule",
                 "points": [
-                    "An Android app that assists students to organize course schedule and prevents students from being disturbed by cell phone during class"
+                    "Wrote an Android app that assists students to organize course schedule and prevents students from being disturbed by cell phone during class"
                 ]
             }, {
                 "headline": "Github Projects",
@@ -180,9 +180,9 @@
                 "title": "Healthcare Information System For Mining Drug Side Effects",
                 "organisation": "",
                 "from": "Feb. 2014",
-                "to": "Present",
+                "to": "May. 2014",
                 "points": [
-                    "Organized and lead the team work",
+                  //  "Organized and lead the team work",
                     "Designed the functionalities and user interface of the system",
                     "Built the website for demonstrating the system using Angularjs and Flask"
                 ]
