@@ -1,0 +1,259 @@
+<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="public/css/screen.css" />
+<link rel="stylesheet" type="text/css" href="public/css/mobile.css" />
+<div id="page">
+{{#bio_data}}
+	<div id="top-contact">
+		<div class="contact-details">
+			{{#email}}
+			<div class="icon-envelope icon-square"></div> {{email}}<br />
+			{{/email}}
+			{{#phone}}
+			<div class="icon-phone icon-square"></div> {{phone}}<br />
+			{{/phone}}
+			{{#website}}
+			<div class="icon-globe icon-square"></div><a href="{{website}}"> {{website}}</a>
+			{{/website}}
+		</div>
+	</div>
+	
+	<h1 class="emphnext">{{firstname}} {{familyname}}</h1>
+	{{#stars}}
+	<span class="stars" style="clear:left">
+		 {{#items}}
+		 {{name}} {{^last}}<div class="icon-star-o icon-star"></div>{{/last}}
+		 {{/items}}
+	</span>
+	{{/stars}}
+	<br/><br/>
+
+	{{#summary}}
+	<h2><div class="icon-user icon-square"></div> ##summary##</h2>
+	<ul>
+		{{#points}}
+		<li>{{{.}}}</li>
+		{{/points}}
+	</ul>
+	{{/summary}}
+
+	{{#github_projects}}
+	<h2><div class="icon-github icon-square"></div> ##github_projects##</h2>
+	<ul>
+	{{#details}}
+		<li><a href="https://github.com/{{project_name}}">{{project_name}}</a>
+		{{#tagline}} &raquo; {{{tagline}}}{{/tagline}}
+			<ul>
+				{{#description}}
+				<li>{{{.}}}</li>
+				{{/description}}
+			</ul>
+		</li>
+	{{/details}}
+	</ul>
+	{{/github_projects}}
+
+	{{#skills}}
+	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
+	<ul class="languages">
+		{{#details}}
+		<li>{{type}}: 
+			{{#items}}
+			<span class="label label-default">{{name}}</span>
+			{{/items}}
+		</li>
+		{{/details}}
+	</ul>
+	{{/skills}}
+
+	{{#education}}
+	<h2><div class="icon-mortar-board icon-rect"></div> ##education##</h2>
+	<div id="mobile-table">
+		<div class="table-responsive">
+			<table class="table education">
+				<tr>
+					<th>##degree##</th><th>##major##</th><th>##institution##</th><th nowrap>##graduation_year##</th>{{#show_gpa}}<th>##gpa##</th>{{/show_gpa}}
+				</tr>
+				{{#schools}}
+				<tr>
+					<td>{{degree}}</td><td>{{major}}</td><td>{{institution}}</td><td align="center">{{graduation_year}}</td>{{#show_gpa}}<td>{{gpa}}</td>{{/show_gpa}}
+				</tr>
+				{{/schools}}
+			</table>
+		</div>
+	</div>
+	<div id="desktop-table">
+		<table class="table education">
+			<tr>
+				<th>##degree##</th><th>##major##</th><th>##institution##</th><th nowrap>##graduation_year##</th>{{#show_gpa}}<th>##gpa##</th>{{/show_gpa}}
+			</tr>
+			{{#schools}}
+			<tr>
+				<td>{{degree}}</td><td>{{major}}</td><td>{{institution}}</td><td align="center">{{graduation_year}}</td>{{#show_gpa}}<td>{{gpa}}</td>{{/show_gpa}}
+			</tr>
+			{{/schools}}
+		</table>
+	</div>
+	{{/education}}
+
+	{{#acad_achievements}}
+	<h2><div class="icon-bookmark icon-rect"></div> ##acad_achievements##</h2>
+	<ul>
+		{{#items}}
+		<li>{{{.}}}</li>
+		{{/items}}
+	</ul>
+	{{/acad_achievements}}
+
+	{{#experience}}
+	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
+	<ul>
+		{{#items}}
+		<li>{{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}}
+			<span class="right">({{from}} – {{to}})</span>
+			<ul>
+				{{#details}}
+				<li>{{{.}}}</li>
+				{{/details}}
+				{{#technology_used}}
+				<li>##technology_used##: 
+					{{#tools}}
+					<span class="label label-default">{{name}}</span>
+					{{/tools}}
+				</li>
+				{{/technology_used}}
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/experience}}
+
+	{{#other_projects}}
+	<h2><div class="icon-gear icon-square"></div> ##other_projects##</h2>
+	<ul>
+		{{#items}}
+		<li>
+			{{{headline}}}
+			<ul>
+				{{#points}}
+				<li>{{{.}}}</li>
+				{{/points}}
+				{{#technology_used}}
+				<li>##technology_used##: 
+					{{#tools}}
+					<span class="label label-default">{{name}}</span>
+					{{/tools}}
+				</li>
+				{{/technology_used}}			
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/other_projects}}
+
+	{{#grad_courses}}
+	<h2><div class="icon-institution icon-square"></div> ##grad_courses##</h2>
+	<table class="table education">
+		{{#rows}}
+		<tr>
+			{{#columns}}
+			<td><a href="{{url}}">{{name}}</a></td>
+			{{/columns}}
+		</tr>
+		{{/rows}}
+	</table>
+	{{/grad_courses}}
+
+	{{#undergrad_courses}}
+	<h2><div class="icon-bookmark icon-square"></div> ##undergrad_courses##</h2>
+	<table class="table education">
+		{{#rows}}
+		<tr>
+			{{#columns}}
+			<td><a href="{{url}}">{{name}}</a></td>
+			{{/columns}}
+		</tr>
+		{{/rows}}
+	</table>
+	{{/undergrad_courses}}
+
+	{{#research_experience}}
+	<h2><div class="icon-edit icon-square"></div> ##research_experience##</h2>
+	<ul>
+		{{#items}}
+		<li>
+			{{title}}, {{{organisation}}}
+			<span class="right">({{from}} – {{to}})</span>
+			<ul>
+				{{#points}}
+				<li>{{{.}}}</li>
+				{{/points}}
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/research_experience}}
+
+	{{#patents}}
+	<h2><div class="icon-file icon-square"></div> ##patents##</h2>
+	<ul>
+		{{#items}}
+		<li>{{patent_id}} 
+			<a href="{{url}}">{{title}}</a> 
+			{{#issuance_date}}, ##issuance## {{issuance_date}}{{/issuance_date}}.
+		</li>
+		{{/items}}
+	</ul>
+	{{/patents}}
+
+	{{#papers}}
+	<h2><div class="icon-edit icon-square"></div> ##papers##</h2>
+	<ul>
+		{{#items}}
+		<li>{{authors}} 
+			<a href="{{url}}">{{title}},</a> 
+			 {{{misc}}}.
+		</li>
+		{{/items}}
+	</ul>
+	{{/papers}}
+
+	{{#memberships}}
+	<h2><div class="icon-globe icon-square"></div> ##memberships##</h2>
+	<ul>
+		{{#committees}}
+		<li>{{{.}}}</li>
+		{{/committees}}
+	</ul>	
+	{{/memberships}}
+	
+	{{#extra_curricular}}
+	<h2><div class="icon-music icon-square"></div> ##extra_curricular##</h2>
+	<ul>
+		{{#items}}
+		<li>{{{.}}}</li>
+		{{/items}}
+	</ul>
+	{{/extra_curricular}}
+
+	<br />
+	<div id="bottom-contact" text-size="80%">
+		{{#email}}
+		<div class="icon-envelope icon-square"></div> {{email}}<br />
+		{{/email}}
+		{{#phone}}
+		<div class="icon-phone icon-square"></div> {{phone}}<br />
+		{{/phone}}
+		{{#website}}
+		<div class="icon-globe icon-square"></div><a href="{{website}}"> {{website}}</a>
+		{{/website}}
+	</div>
+</div>
+
+{{/bio_data}}
+
+{{#settings}}
+	{{#icons}}
+	<script src="public/js/grunticon.js"></script>
+	{{/icons}}
+{{/settings}}
+</div><!-- End Page -->

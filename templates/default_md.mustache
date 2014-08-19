@@ -1,0 +1,130 @@
+{{#bio_data}}
+##{{firstname}} {{familyname}}
+[{{website}}]({{website}}) {{#email}}`{{email}}`{{/email}} {{#phone}}`{{phone}}`{{/phone}}
+
+{{#stars}}
+{{#items}}{{name}}{{^last}} - {{/last}}{{/items}}
+{{/stars}}
+
+{{#summary}}
+### ##summary##
+{{#points}}
+* {{{.}}}
+{{/points}}
+{{/summary}}
+
+{{#github_projects}}
+### ##github_projects##
+{{#details}}
+* [{{project_name}}](http://github.com/{{project_name}}){{#tagline}} : {{tagline}}{{/tagline}}
+{{#description}}
+    - {{{.}}}
+{{/description}}
+{{/details}}
+{{/github_projects}}
+
+{{#skills}}
+### ##skills##
+{{#details}}
+* **{{type}}**: {{#items}}`{{name}}` {{/items}}
+{{/details}}
+{{/skills}}
+
+{{#education}}
+### ##education##
+ ##degree## | ##major## | ##institution## | ##graduation_year##{{#show_gpa}} | ##gpa##{{/show_gpa}}
+:--:|:--:|:--:|:--:{{#show_gpa}}|:--:{{/show_gpa}}
+{{#schools}}
+{{degree}} | {{major}} | {{institution}} | {{graduation_year}}{{#show_gpa}} | {{gpa}}{{/show_gpa}}
+{{/schools}}
+{{/education}}
+
+{{#acad_achievements}}
+### ##acad_achievements##
+{{#items}}
+* {{{.}}}
+{{/items}}
+{{/acad_achievements}}
+
+{{#experience}}
+### ##experience##
+{{#items}}
+* {{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}} ({{from}} – {{to}})
+{{#details}}
+    - {{{.}}}
+{{/details}}
+{{#technology_used}}
+    - ##technology_used##: {{#tools}}`{{name}}` {{/tools}}
+{{/technology_used}}
+{{/items}}
+{{/experience}}
+
+{{#other_projects}}
+### ##other_projects##
+{{#items}}
+* {{{headline}}}
+{{#points}}
+    - {{{.}}}
+{{/points}}
+{{#technology_used}}
+    - ##technology_used##: {{#tools}}`{{name}}` {{/tools}}
+{{/technology_used}}
+{{/items}}
+{{/other_projects}}
+
+{{#grad_courses}}
+### ##grad_courses##
+{{#rows}}
+{{#columns}}
+{{#name}}* [{{name}}]({{url}}){{/name}}
+{{/columns}}
+{{/rows}}
+{{/grad_courses}}
+
+{{#undergrad_courses}}
+### ##undergrad_courses##
+{{#rows}}
+{{#columns}}
+{{#name}}* [{{name}}]({{url}}){{/name}}
+{{/columns}}
+{{/rows}}
+{{/undergrad_courses}}
+
+{{#research_experience}}
+### ##research_experience##
+{{#items}}
+* {{title}}, {{{organisation}}} ({{from}} – {{to}})
+{{#points}}
+    - {{{.}}}
+{{/points}}
+{{/items}}
+{{/research_experience}}
+
+{{#patents}}
+### ##patents##
+{{#items}}
+* {{patent_id}} - **[{{title}}]({{url}})**{{#issuance_date}}, ##issuance## {{issuance_date}}{{/issuance_date}}.
+{{/items}}
+{{/patents}}
+
+{{#papers}}
+### ##papers##
+{{#items}}
+* {{authors}} **[{{title}}]({{url}})** {{{misc}}}.
+{{/items}}
+{{/papers}}
+
+{{#memberships}}
+### ##memberships##
+{{#committees}}
+* {{{.}}}
+{{/committees}}
+{{/memberships}}
+
+{{#extra_curricular}}
+### ##extra_curricular##
+{{#items}}
+* {{{.}}}
+{{/items}}
+{{/extra_curricular}}
+{{/bio_data}}
