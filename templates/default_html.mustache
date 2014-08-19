@@ -38,18 +38,18 @@
 
 	{{#education}}
 	<h2><div class="icon-mortar-board icon-rect"></div> ##education##</h2>
-	<div id="desktop-table">
-		<table class="table education">
-			<tr>
-				<th>##degree##</th><th>##major##</th><th>##institution##</th><th nowrap>##graduation_year##</th>{{#show_gpa}}<th>##gpa##</th>{{/show_gpa}}
-			</tr>
-			{{#schools}}
-			<tr>
-				<td>{{degree}}</td><td>{{major}}</td><td>{{institution}}</td><td align="center">{{graduation_year}}</td>{{#show_gpa}}<td>{{gpa}}</td>{{/show_gpa}}
-			</tr>
-			{{/schools}}
-		</table>
-	</div>
+		{{#schools}}
+		<b style="float: left; margin-bottom: 0">{{institution}}</b>
+		<p style="float: right; margin-bottom: 0">{{year}}</p>
+		<p style="clear:left; float: left; margin-bottom: 0">{{degree}}</p>
+		<i style="float: right; margin-bottom: 0">Comulative GPA: {{gpa}}</i>
+		{{/schools}}
+		<ul style="clear:both">
+			{{#details}}
+			<li>{{{.}}}</li>
+			{{/details}}
+		</ul>
+
 	{{/education}}
 
 	{{#acad_achievements}}
