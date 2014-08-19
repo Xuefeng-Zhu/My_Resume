@@ -65,29 +65,6 @@
 	</ul>
 	{{/skills}}
 
-	{{#experience}}
-	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
-	<ul>
-		{{#items}}
-		<li>{{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}}
-			<span class="right">({{from}} – {{to}})</span>
-			<ul>
-				{{#details}}
-				<li>{{{.}}}</li>
-				{{/details}}
-				{{#technology_used}}
-				<li>##technology_used##: 
-					{{#tools}}
-					<span class="label label-default">{{name}}</span>
-					{{/tools}}
-				</li>
-				{{/technology_used}}
-			</ul>
-		</li>
-		{{/items}}
-	</ul>
-	{{/experience}}
-
 	{{#projects}}
 	<h2><div class="icon-gear icon-square"></div> Projects</h2>
 	<ul>
@@ -110,6 +87,29 @@
 		{{/items}}
 	</ul>
 	{{/projects}}
+
+	{{#experience}}
+	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
+	<ul>
+		{{#items}}
+		<li>{{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}}
+			<span class="right">({{from}} – {{to}})</span>
+			<ul>
+				{{#details}}
+				<li>{{{.}}}</li>
+				{{/details}}
+				{{#technology_used}}
+				<li>##technology_used##: 
+					{{#tools}}
+					<span class="label label-default">{{name}}</span>
+					{{/tools}}
+				</li>
+				{{/technology_used}}
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/experience}}
 
 	{{#research_experience}}
 	<h2><div class="icon-edit icon-square"></div> ##research_experience##</h2>
