@@ -5,6 +5,9 @@
 {{#bio_data}}
 	<div id="top-contact">
 		<div class="contact-details">
+			{{#qr_code}}
+			<img src="{{qr_code}}" width="10%" style="position: absolute; right: 33%; top: 3%">
+			{{/qr_code}}
 			{{#email}}
 			<div class="icon-envelope icon-square"></div> {{email}}<br />
 			{{/email}}

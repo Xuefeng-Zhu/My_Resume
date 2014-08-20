@@ -7,6 +7,7 @@
     "linkedin_id": "xuefeng-zhu",
     "github_id": "Xuefeng-Zhu",
     "bio_data": {
+        "qr_code": "../contact.png",
         "email": "xzhu15@illinois.edu",
         "phone": "+1 (217) 607-6680",
         "github": "github.com/Xuefeng-Zhu",
@@ -85,14 +86,16 @@
                 "points": [
                     "Wrote an Android app that assists students to organize course schedule and prevents students from being disturbed by cell phone during class"
                 ]
-            }, {
-                "headline": "Github Projects",
-                "points": [
-                    "AngularJS-Learning: A bunch of links to blog posts, articles, videos, etc for learning AngularJS",
-                    "awesome-python: A curated list of awesome Python frameworks, libraries and software.",
-                    "More project"
-                ]
-            }]
+            }
+            // , {
+            //     "headline": "Github Projects",
+            //     "points": [
+            //         "AngularJS-Learning: A bunch of links to blog posts, articles, videos, etc for learning AngularJS",
+            //         "awesome-python: A curated list of awesome Python frameworks, libraries and software.",
+            //         "More project"
+            //     ]
+            // }
+            ]
         },
         "experience": {
             "items": [{
@@ -194,30 +197,30 @@
                 "title": "A 3D, Interactive Virtual Instruction Laboratory And A Virtual Model of A Reactor Control Room",
                 "misc": "ASEE, Nov. 2013"
             }]
-        },
-        "extra_curricular": {
-            "items": [{
-                "title": "Second Place at CS241 Memory Allocation Contest",
-                "date": "Feb. 2014"
-            }, {
-                "title": "Best Mashup at Library Mobile Web App Code Camp",
-                "date": "Nov. 2013"
-            }, {
-                "title": "Finalist Award at Library Mobile App Competition",
-                "date": "Feb. 2013"
-            }]
-        },
-        "other_interests": {
-            "items": [
-                "Reading books and tech news",
-                "Designing",
-                "Running",
-                "Listening music",
-                "Watching funny videos"
-            ]
-        },
-        "contact":{
-            "src": "../contact.png"
         }
+        // "extra_curricular": {
+        //     "items": [{
+        //         "title": "Second Place at CS241 Memory Allocation Contest",
+        //         "date": "Feb. 2014"
+        //     }, {
+        //         "title": "Best Mashup at Library Mobile Web App Code Camp",
+        //         "date": "Nov. 2013"
+        //     }, {
+        //         "title": "Finalist Award at Library Mobile App Competition",
+        //         "date": "Feb. 2013"
+        //     }]
+        // },
+        // "other_interests": {
+        //     "items": [
+        //         "Reading books and tech news",
+        //         "Designing",
+        //         "Running",
+        //         "Listening music",
+        //         "Watching funny videos"
+        //     ]
+        // },
+        // "contact":{
+        //     "src": "../contact.png"
+        // }
     }
 }
