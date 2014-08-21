@@ -11,6 +11,7 @@ This project is based on [prat0318/json_resume](https://github.com/prat0318/json
 ### Conversion
 
 * Syntax
+`json_resume convert --template templates/default_html.mustache --out=html_pdf Xuefeng_Zhu_Resume.json`
 
 ```
     json_resume convert [--template=/path/to/custom/template] 
