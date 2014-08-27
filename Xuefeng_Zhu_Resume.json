@@ -33,7 +33,7 @@
         },
         "skills": {
             "details": [{
-                "type": "My Favoraite Languages",
+                "type": "My Favorite Languages",
                 "items": [
                     "Python",
                     "Javascript",
@@ -84,7 +84,7 @@
             }, {
                 "headline": "Ischedule",
                 "points": [
-                    "Wrote an Android app that assists students to organize course schedule and prevents students from being disturbed by cell phone during class"
+                    "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
                 ]
             }
             // , {

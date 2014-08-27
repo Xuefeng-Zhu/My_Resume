@@ -6,7 +6,7 @@
 	<div id="top-contact">
 		<div class="contact-details">
 			{{#qr_code}}
-			<img src="{{qr_code}}" width="10%" style="position: absolute; right: 33%; top: 3%">
+			<img src="{{qr_code}}" width="10%" style="position: absolute; right: 28%; top: 4%">
 			{{/qr_code}}
 			{{#email}}
 			<div class="icon-envelope icon-square"></div> {{email}}<br />
@@ -85,7 +85,7 @@
 		<li>
 			<b>{{title}}</b> 
 			<span class="right">({{from}} - {{to}})</span>
-			<p style="font-style: italic; margin-bottom:0">Supervised by: {{{supervisor}}}</p>
+			<p style="margin-bottom:0">Supervised by: {{{supervisor}}}</p>
 			<ul>
 				{{#points}}
 				<li>{{{.}}}</li>
@@ -125,8 +125,8 @@
 		{{#items}}
 		<li>
 			<p style="font-weight:bold; margin-bottom:0">{{title}}</p> 
-			<p style="float: left; margin:0">{{authors}}</p> 
-			<p style="float: right; margin:0">{{{misc}}}</p>
+			<p style="float: left; margin-bottom:0.3em">{{authors}}</p> 
+			<p style="float: right; margin-bottom:0.3em">{{{misc}}}</p>
 		</li>
 		{{/items}}
 	</ul>
