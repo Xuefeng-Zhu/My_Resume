@@ -23,12 +23,12 @@
             "schools": [{
                 "degree": "BS in Computer Science",
                 "institution": "University of Illinois at Urbana-Champaign",
-                "year": "May, 2016",
+                "year": "May 2016",
                 "gpa": "4.00/4.00"
             }],
             "details": [
-                "Dean’s List: Fall 2012, Spring 2013",
-                "Stay Top 5 for most computer scince courses have taken"
+                // "Dean’s List: Fall 2012, Spring 2013",
+                // "Stay Top 5 for most computer scince courses have taken"
             ]
         },
         "skills": {
@@ -72,12 +72,12 @@
         },
         "projects": {
             "items": [{
-                "headline": "Meetup",
+                "headline": "Meetup (Available in Github)",
                 "points": [
                     "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
                 ]
             }, {
-                "headline": "Google Sheet based SQL Engine",
+                "headline": "Google Sheet based SQL Engine (Available in Github)",
                 "points": [
                     "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
                 ]
@@ -99,11 +99,11 @@
         },
         "experience": {
             "items": [{
-                "title": "Software Developer Engineer",
+                "title": "Software Developer Intern",
                 "organisation": "Dow AgroSciences",
                 "location": "Indianapolis, IN",
-                "from": "May, 2014",
-                "to": "August, 2014",
+                "from": "May 2014",
+                "to": "August 2014",
                 "details": [
                     "Collaborated with teammates to develope an administration dashboard",
                     "Wrote the user and development guideline for the administration dashboard"
@@ -119,9 +119,9 @@
                 }
             }, {
                 "title": "Software Developer Engineer",
-                "organisation": "University of Illinois",
+                "organisation": "Department of Computer Science",
                 "location": "Urbana, IL",
-                "from": "May, 2014",
+                "from": "May 2014",
                 "to": "Present",
                 "details": [
                     "Maintained SIGCOMM2014 websites and built a template system for updating the website",
@@ -142,7 +142,7 @@
                 "title": "Director of Information",
                 "organisation": "Engineering Council",
                 "location": "Urbana, IL",
-                "from": "April, 2014",
+                "from": "April 2014",
                 "to": "Present",
                 "details": [
                     "Managed and maintained the mailing list and EC web server",
@@ -159,13 +159,13 @@
                 }
             }, {
                 "title": "Unity3D Developer and Web Developer",
-                "organisation": "University of Illinois",
+                "organisation": "Department of NPRE",
                 "location": "Urbana, IL",
-                "from": "April, 2013",
-                "to": "May, 2014",
+                "from": "April 2013",
+                "to": "May 2014",
                 "details": [
                     "Participated in the project design and programming, including building 3D models and writing scripts",
-                    "Developed a course website for NPRE100"
+                    "Created a course website for NPRE100"
                 ],
                 "technology_used": {
                     "tools": [
@@ -183,7 +183,7 @@
                 "title": "Healthcare Information System For Mining Drug Side Effects",
                 "supervisor": "Sheng Wang, Chengxiang Zhai",
                 "from": "Feb. 2014",
-                "to": "May. 2014",
+                "to": "May 2014",
                 "points": [
                   //  "Organized and lead the team work",
                     "Designed the functionalities and user interface of the system",

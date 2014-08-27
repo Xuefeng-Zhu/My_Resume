@@ -34,7 +34,7 @@
 	<h2><div class="icon-user icon-square"></div> ##summary##</h2>
 	<ul>
 		{{#points}}
-		<li>{{{.}}}</li>
+		<li style="list-style-type: square">{{{.}}}</li>
 		{{/points}}
 	</ul>
 	{{/summary}}
@@ -55,47 +55,11 @@
 
 	{{/education}}
 
-	{{#skills}}
-	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
-	<ul class="languages">
-		{{#details}}
-		<li>{{type}}: 
-			{{#items}}
-			<span class="label label-default">{{name}}</span>
-			{{/items}}
-		</li>
-		{{/details}}
-	</ul>
-	{{/skills}}
-
-	{{#projects}}
-	<h2><div class="icon-gear icon-square"></div> Projects</h2>
-	<ul>
-		{{#items}}
-		<li>
-			<b>{{{headline}}}</b>
-			<ul>
-				{{#points}}
-				<li>{{{.}}}</li>
-				{{/points}}
-				{{#technology_used}}
-				<li>##technology_used##: 
-					{{#tools}}
-					<span class="label label-default">{{name}}</span>
-					{{/tools}}
-				</li>
-				{{/technology_used}}			
-			</ul>
-		</li>
-		{{/items}}
-	</ul>
-	{{/projects}}
-
 	{{#experience}}
 	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
 	<ul>
 		{{#items}}
-		<li><b>{{title}}</b>,{{{organisation}}}{{#location}}, {{{location}}}{{/location}}
+		<li><b>{{title}}</b>,&nbsp;{{{organisation}}}{{#location}}, {{{location}}}{{/location}}
 			<span class="right">({{from}} - {{to}})</span>
 			<ul>
 				{{#details}}
@@ -132,19 +96,55 @@
 	</ul>
 	{{/research_experience}}
 
+	{{#projects}}
+	<h2><div class="icon-gear icon-square"></div> Projects</h2>
+	<ul>
+		{{#items}}
+		<li>
+			<b>{{{headline}}}</b>
+			<ul>
+				{{#points}}
+				<li>{{{.}}}</li>
+				{{/points}}
+				{{#technology_used}}
+				<li>##technology_used##: 
+					{{#tools}}
+					<span class="label label-default">{{name}}</span>
+					{{/tools}}
+				</li>
+				{{/technology_used}}			
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/projects}}
+
 	{{#papers}}
 	<h2><div class="icon-edit icon-square"></div> ##papers##</h2>
 	<ul>
 		{{#items}}
 		<li>
 			<p style="font-weight:bold; margin-bottom:0">{{title}}</p> 
-			<p style="float: left">{{authors}}</p> 
-			<p style="float: right">{{{misc}}}</p>
+			<p style="float: left; margin:0">{{authors}}</p> 
+			<p style="float: right; margin:0">{{{misc}}}</p>
 		</li>
 		{{/items}}
 	</ul>
 	{{/papers}}
 	
+	{{#skills}}
+	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
+	<ul class="languages">
+		{{#details}}
+		<li>{{type}}: 
+			{{#items}}
+			<span class="label label-default">{{name}}</span>
+			{{/items}}
+		</li>
+		{{/details}}
+	</ul>
+	{{/skills}}
+
 	{{#extra_curricular}}
 	<h2><div class="icon-bookmark icon-square"></div> ##extra_curricular##</h2>
 	<ul>
