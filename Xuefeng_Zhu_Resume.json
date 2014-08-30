@@ -42,10 +42,10 @@
             }, {
                 "type": "Other Languages",
                 "items": [
-                    "Go",
                     "Java",
                     "C#",
                     "C++",
+                    "Go",
                     "HTML",
                     "XML",
                     "CSS",
