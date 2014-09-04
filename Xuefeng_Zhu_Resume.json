@@ -11,10 +11,10 @@
         "email": "xzhu15@illinois.edu",
         "phone": "+1 (217) 607-6680",
         "github": "github.com/Xuefeng-Zhu",
-        "stars": ["Python", "Javascript", "Music"],
+        // "stars": ["Python", "Javascript", "Music"],
         "summary": {
             "points": [
-                "Passion about latest technology, and believe computer science make live better",
+                "Passionate about latest technology, and believe computer science makes live better",
                 "Love coding, designing, learning, and open source",
                 "Eager to work with aswesome people on awesome products"
             ]
@@ -99,7 +99,7 @@
         },
         "experience": {
             "items": [{
-                "title": "Software Developer Intern",
+                "title": "Software Development Intern",
                 "organisation": "Dow AgroSciences",
                 "location": "Indianapolis, IN",
                 "from": "May 2014",
@@ -118,7 +118,7 @@
                     ]
                 }
             }, {
-                "title": "Software Developer Engineer",
+                "title": "Software Development Engineer",
                 "organisation": "Department of Computer Science",
                 "location": "Urbana, IL",
                 "from": "May 2014",
