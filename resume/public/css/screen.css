@@ -31,7 +31,7 @@ body {
 img { -ms-interpolation-mode:bicubic; }
 
 /* IE6 ignores this and uses default size of 16pt */
-html>body { font-size:15px; }
+html>body { font-size:16px; }
 p { margin: 0 0 1.5em 0; text-align: justify; }
 
 a { 
@@ -175,7 +175,7 @@ ul {
 /*	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 */
-	line-height: 1.3em;
+	line-height: 1.17em;
 	padding-left: 2.5em;
 }
 ul li {
