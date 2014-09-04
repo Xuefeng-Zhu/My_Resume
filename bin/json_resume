@@ -92,7 +92,7 @@ class JsonResumeCLI < Thor
         :margin_top => 0.0,
         :margin_left=> 0.0, 
         :margin_right => 0.0,
-        :margin_bottom => 4.0,
+        :margin_bottom => 0.0,
         :page_size => 'Letter'
       }
       kit = PDFKit.new(html_file, pdf_options)
