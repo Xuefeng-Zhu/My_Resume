@@ -16,7 +16,7 @@
             "points": [
                 "Passionate about latest technology, and believe computer science makes live better",
                 "Love coding, designing, learning, and open source",
-                "Eager to work with aswesome people on awesome products"
+                "Eager to work with awesome people on awesome products"
             ]
         },
         "education": {
@@ -28,7 +28,7 @@
             }],
             "details": [
                 // "Dean’s List: Fall 2012, Spring 2013",
-                // "Stay Top 5 for most computer scince courses have taken"
+                // "Stay Top 5 for most computer science courses have taken"
             ]
         },
         "skills": {
@@ -100,12 +100,12 @@
         "experience": {
             "items": [{
                 "title": "Software Development Intern",
-                "organisation": "Dow AgroSciences",
+                "organization": "Dow AgroSciences",
                 "location": "Indianapolis, IN",
                 "from": "May 2014",
                 "to": "August 2014",
                 "details": [
-                    "Collaborated with teammates to develope an administration dashboard",
+                    "Collaborated with teammates to develop an administration dashboard",
                     "Wrote the user and development guideline for the administration dashboard"
                 ],
                 "technology_used": {
@@ -119,7 +119,7 @@
                 }
             }, {
                 "title": "Software Development Engineer",
-                "organisation": "Department of Computer Science",
+                "organization": "Department of Computer Science",
                 "location": "Urbana, IL",
                 "from": "May 2014",
                 "to": "Present",
@@ -140,7 +140,7 @@
                 }
             }, {
                 "title": "Director of Information",
-                "organisation": "Engineering Council",
+                "organization": "Engineering Council",
                 "location": "Urbana, IL",
                 "from": "April 2014",
                 "to": "Present",
@@ -159,7 +159,7 @@
                 }
             }, {
                 "title": "Unity3D Developer and Web Developer",
-                "organisation": "Department of NPRE",
+                "organization": "Department of NPRE",
                 "location": "Urbana, IL",
                 "from": "April 2013",
                 "to": "May 2014",
