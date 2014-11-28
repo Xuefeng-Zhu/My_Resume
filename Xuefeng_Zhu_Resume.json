@@ -72,52 +72,33 @@
         },
         "projects": {
             "items": [{
-                "headline": "Meetup (Available in Github)",
-                "points": [
-                    "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
-                ]
-            }, {
-                "headline": "Google Sheet based SQL Engine (Available in Github)",
-                "points": [
-                    "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
-                ]
-            }, {
-                "headline": "Ischedule",
-                "points": [
-                    "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
-                ]
-            }
-            // , {
-            //     "headline": "Github Projects",
-            //     "points": [
-            //         "AngularJS-Learning: A bunch of links to blog posts, articles, videos, etc for learning AngularJS",
-            //         "awesome-python: A curated list of awesome Python frameworks, libraries and software.",
-            //         "More project"
-            //     ]
-            // }
+                    "headline": "Meetup (Available in Github)",
+                    "points": [
+                        "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
+                    ]
+                }, {
+                    "headline": "Google Sheet based SQL Engine (Available in Github)",
+                    "points": [
+                        "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
+                    ]
+                }, {
+                    "headline": "Ischedule",
+                    "points": [
+                        "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
+                    ]
+                }
+                // , {
+                //     "headline": "Github Projects",
+                //     "points": [
+                //         "AngularJS-Learning: A bunch of links to blog posts, articles, videos, etc for learning AngularJS",
+                //         "awesome-python: A curated list of awesome Python frameworks, libraries and software.",
+                //         "More project"
+                //     ]
+                // }
             ]
         },
         "experience": {
             "items": [{
-                "title": "Software Development Intern",
-                "organization": "Dow AgroSciences",
-                "location": "Indianapolis, IN",
-                "from": "May 2014",
-                "to": "August 2014",
-                "details": [
-                    "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
-                    "Wrote the user and development guideline for the administration dashboard"
-                ],
-                "technology_used": {
-                    "tools": [
-                        "Angular",
-                        "jQuery",
-                        "BootStrap",
-                        "WCF Restful",
-                        "Oracle"
-                    ]
-                }
-            }, {
                 "title": "Software Development Engineer",
                 "organization": "Department of Computer Science",
                 "location": "Urbana, IL",
@@ -136,6 +117,25 @@
                         "Firebase",
                         "Nodejs",
                         "Heroku"
+                    ]
+                }
+            }, {
+                "title": "Software Development Intern",
+                "organization": "Dow AgroSciences",
+                "location": "Indianapolis, IN",
+                "from": "May 2014",
+                "to": "August 2014",
+                "details": [
+                    "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
+                    "Wrote the user and development guideline for the administration dashboard"
+                ],
+                "technology_used": {
+                    "tools": [
+                        "Angular",
+                        "jQuery",
+                        "BootStrap",
+                        "WCF Restful",
+                        "Oracle"
                     ]
                 }
             }, {
@@ -185,7 +185,7 @@
                 "from": "Feb. 2014",
                 "to": "May 2014",
                 "points": [
-                  //  "Organized and lead the team work",
+                    //  "Organized and lead the team work",
                     "Designed the functionalities and user interface of the system",
                     "Built the website for demonstrating the system using Angularjs and Flask"
                 ]
