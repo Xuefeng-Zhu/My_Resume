@@ -142,7 +142,7 @@
                 "title": "Software Development Intern",
                 "organization": "Dow AgroSciences",
                 "location": "Indianapolis, IN",
-                "from": "May 2014",
+                "from": "May",
                 "to": "August 2014",
                 "details": [
                     "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
@@ -182,7 +182,7 @@
             "items": [{
                 "title": "Healthcare Information System For Mining Drug Side Effects",
                 "supervisor": "Sheng Wang, Chengxiang Zhai",
-                "from": "Feb. 2014",
+                "from": "February",
                 "to": "May 2014",
                 "points": [
                     //  "Organized and lead the team work",
@@ -193,9 +193,9 @@
         },
         "papers": {
             "items": [{
-                "authors": "Ye Li, Xuefeng Zhu, Rizwan-uddin",
+                "authors": "American Society for Engineering Education",
                 "title": "A 3D, Interactive Virtual Instruction Laboratory And A Virtual Model of A Reactor Control Room",
-                "misc": "American Society for Engineering Education, Nov. 2013"
+                "misc": "November 2013"
             }]
         }
         // "extra_curricular": {
