@@ -120,25 +120,6 @@
                     ]
                 }
             }, {
-                "title": "Software Development Intern",
-                "organization": "Dow AgroSciences",
-                "location": "Indianapolis, IN",
-                "from": "May 2014",
-                "to": "August 2014",
-                "details": [
-                    "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
-                    "Wrote the user and development guideline for the administration dashboard"
-                ],
-                "technology_used": {
-                    "tools": [
-                        "Angular",
-                        "jQuery",
-                        "BootStrap",
-                        "WCF Restful",
-                        "Oracle"
-                    ]
-                }
-            }, {
                 "title": "Director of Information",
                 "organization": "Engineering Council",
                 "location": "Urbana, IL",
@@ -155,6 +136,25 @@
                         "PHP",
                         "MySQL",
                         "Trello"
+                    ]
+                }
+            }, {
+                "title": "Software Development Intern",
+                "organization": "Dow AgroSciences",
+                "location": "Indianapolis, IN",
+                "from": "May 2014",
+                "to": "August 2014",
+                "details": [
+                    "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
+                    "Wrote the user and development guideline for the administration dashboard"
+                ],
+                "technology_used": {
+                    "tools": [
+                        "Angular",
+                        "jQuery",
+                        "BootStrap",
+                        "WCF Restful",
+                        "Oracle"
                     ]
                 }
             }, {
