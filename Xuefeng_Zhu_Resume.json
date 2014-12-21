@@ -14,7 +14,7 @@
         // "stars": ["Python", "Javascript", "Music"],
         "summary": {
             "points": [
-                "Passionate about latest technology, and believe computer science makes live better",
+                "Passionate about latest technology, and believe computer science makes lives better",
                 "Love coding, designing, learning, and open source",
                 "Eager to work with awesome people on awesome products"
             ]
@@ -193,9 +193,9 @@
         },
         "papers": {
             "items": [{
-                "authors": "Ye Li, Imran Haddish, Xuefeng Zhu, Yoshinori Satoh, Rizwan-uddin",
+                "authors": "Ye Li, Xuefeng Zhu, Rizwan-uddin",
                 "title": "A 3D, Interactive Virtual Instruction Laboratory And A Virtual Model of A Reactor Control Room",
-                "misc": "ASEE, Nov. 2013"
+                "misc": "American Society for Engineering Education, Nov. 2013"
             }]
         }
         // "extra_curricular": {
