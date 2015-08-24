@@ -11,55 +11,41 @@
         "email": "xzhu15@illinois.edu",
         "phone": "+1 (217) 607-6680",
         "github": "github.com/Xuefeng-Zhu",
-        // "stars": ["Python", "Javascript", "Music"],
-        "summary": {
-            "points": [
-                "Passionate about latest technology, and believe computer science makes lives better",
-                "Love coding, designing, learning, and open source",
-                "Eager to work with awesome people on awesome products"
-            ]
-        },
         "education": {
             "schools": [{
                 "degree": "BS in Computer Science",
                 "institution": "University of Illinois at Urbana-Champaign",
-                "year": "May 2016",
+                "year": "Dec 2015",
                 "gpa": "4.00/4.00"
-            }],
-            "details": [
-                // "Dean’s List: Fall 2012, Spring 2013",
-                // "Stay Top 5 for most computer science courses have taken"
-            ]
+            }]
         },
         "skills": {
             "details": [{
                 "type": "My Favorite Languages",
                 "items": [
                     "Python",
-                    "Javascript",
+                    "Java",
                     "C"
                 ]
             }, {
                 "type": "Other Languages",
                 "items": [
-                    "Java",
+                    "Javascript",
                     "C#",
                     "C++",
                     "Go",
-                    "HTML",
                     "XML",
                     "CSS",
                     "SQL",
                     "Pascal",
                     "MATLAB",
-                    "Verilog",
-                    "MIPS"
+                    "Ocaml"
                 ]
             }, {
                 "type": "Experience With",
                 "items": [
                     "Angular",
-                    "jQuery",
+                    "GWT",
                     "Flask",
                     "Jinja2",
                     "Express",
@@ -72,111 +58,138 @@
         },
         "projects": {
             "items": [{
-                    "headline": "Meetup (Available in Github)",
-                    "points": [
-                        "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
-                    ]
-                }, {
-                    "headline": "Google Sheet based SQL Engine (Available in Github)",
-                    "points": [
-                        "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
-                    ]
-                }, {
-                    "headline": "Ischedule",
-                    "points": [
-                        "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
-                    ]
-                }
-                // , {
-                //     "headline": "Github Projects",
-                //     "points": [
-                //         "AngularJS-Learning: A bunch of links to blog posts, articles, videos, etc for learning AngularJS",
-                //         "awesome-python: A curated list of awesome Python frameworks, libraries and software.",
-                //         "More project"
-                //     ]
-                // }
-            ]
+                "headline": "Google Sheet based SQL Engine (Available in Github)",
+                "points": [
+                    "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
+                ]
+            }, {
+                "headline": "EverEdu (Available in Github)",
+                "points": [
+                    "Developed a web application to improve the interaction between instructors and students"
+                ]
+            }, {
+                "headline": "Meetup (Available in Github)",
+                "points": [
+                    "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
+                ]
+            }, {
+                "headline": "Ischedule",
+                "points": [
+                    "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
+                ]
+            }, {
+                "headline": "Open Source Projects",
+                "points": [
+                    "More open source project contributions on Github"
+                ]
+            }]
         },
         "experience": {
             "items": [{
-                "title": "Software Development Engineer",
-                "organization": "Department of Computer Science",
-                "location": "Urbana, IL",
-                "from": "May 2014",
-                "to": "Present",
-                "details": [
-                    "Maintained SIGCOMM2014 websites and built a template system for updating the website",
-                    "Developed a speed test Chrome extension based on Angularjs and Nodejs"
-                ],
-                "technology_used": {
-                    "tools": [
-                        "Jinja2",
-                        "Google Sheet API",
-                        "Angular",
-                        "Semantic UI",
-                        "Firebase",
-                        "Nodejs",
-                        "Heroku"
-                    ]
+                    "title": "Undergraduate Researcher",
+                    "organization": "Department of Computer Science",
+                    "location": "Urbana, IL",
+                    "from": "May 2014",
+                    "to": "Present",
+                    "details": [
+                        "Integrated PCC, a congestion control algorithm, into Chrome QUIC",
+                        "Developed a speed test Chrome extension based on Angularjs and Nodejs",
+                        "Maintained SIGCOMM2014 websites and built a template system for updating the website"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "Chrome",
+                            "Jinja2",
+                            "Google Sheet API",
+                            "Angular",
+                            "Semantic UI",
+                            "Firebase",
+                            "Nodejs",
+                            "Heroku"
+                        ]
+                    }
+                }, {
+                    "title": "Software Engineer Intern",
+                    "organization": "Evernote",
+                    "location": "Redwood City, CA",
+                    "from": "June",
+                    "to": "August 2015",
+                    "details": [
+                        "Redesigned the image gallery and work chat on Evernote web client",
+                        "Enhanced the search view and notebook sharing experience on web client",
+                        "Developed 7 features and 9 improvements, fixed 40+ bugs"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "GWT",
+                            "Thrift",
+                            "Stripes",
+                            "Less",
+                            "Javascript",
+                            "Jira",
+                            "Gerrit"
+                        ]
+                    }
+                }, {
+                    "title": "Director of Information",
+                    "organization": "Engineering Council",
+                    "location": "Urbana, IL",
+                    "from": "April 2014",
+                    "to": "April 2015",
+                    "details": [
+                        "Managed and maintained the mailing list and EC web server, which hosts over 100 society websites",
+                        "Improved and redesigned the EC websites"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "Cpanel",
+                            "HTML",
+                            "PHP",
+                            "MySQL",
+                            "Trello"
+                        ]
+                    }
+                }, {
+                    "title": "Software Development Intern",
+                    "organization": "Dow AgroSciences",
+                    "location": "Indianapolis, IN",
+                    "from": "May",
+                    "to": "August 2014",
+                    "details": [
+                        "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
+                        "Wrote the user and development guideline for the administration dashboard"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "Angular",
+                            "jQuery",
+                            "BootStrap",
+                            "WCF Restful",
+                            "Oracle"
+                        ]
+                    }
                 }
-            }, {
-                "title": "Director of Information",
-                "organization": "Engineering Council",
-                "location": "Urbana, IL",
-                "from": "April 2014",
-                "to": "Present",
-                "details": [
-                    "Managed and maintained the mailing list and EC web server, which hosts over 100 society websites",
-                    "Improved and redesigned the EC websites"
-                ],
-                "technology_used": {
-                    "tools": [
-                        "Cpanel",
-                        "HTML",
-                        "PHP",
-                        "MySQL",
-                        "Trello"
-                    ]
-                }
-            }, {
-                "title": "Software Development Intern",
-                "organization": "Dow AgroSciences",
-                "location": "Indianapolis, IN",
-                "from": "May",
-                "to": "August 2014",
-                "details": [
-                    "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
-                    "Wrote the user and development guideline for the administration dashboard"
-                ],
-                "technology_used": {
-                    "tools": [
-                        "Angular",
-                        "jQuery",
-                        "BootStrap",
-                        "WCF Restful",
-                        "Oracle"
-                    ]
-                }
-            }, {
-                "title": "Unity3D Developer and Web Developer",
-                "organization": "Department of NPRE",
-                "location": "Urbana, IL",
-                "from": "April 2013",
-                "to": "May 2014",
-                "details": [
-                    "Participated in the project design and programming, including building 3D models and writing scripts",
-                    "Created a course website for NPRE100"
-                ],
-                "technology_used": {
-                    "tools": [
-                        "Unity3D",
-                        "C#",
-                        "HTML",
-                        "CSS",
-                        "Javascript"
-                    ]
-                }
-            }]
+                // , {
+                //     "title": "Unity3D Developer and Web Developer",
+                //     "organization": "Department of NPRE",
+                //     "location": "Urbana, IL",
+                //     "from": "April 2013",
+                //     "to": "May 2014",
+                //     "details": [
+                //         "Participated in the project design and programming, including building 3D models and writing scripts",
+                //         "Created a course website for NPRE100"
+                //     ],
+                //     "technology_used": {
+                //         "tools": [
+                //             "Unity3D",
+                //             "C#",
+                //             "HTML",
+                //             "CSS",
+                //             "Javascript"
+                //         ]
+                //     }
+                // }
+            ]
         },
         "research_experience": {
             "items": [{
@@ -185,7 +198,6 @@
                 "from": "February",
                 "to": "May 2014",
                 "points": [
-                    //  "Organized and lead the team work",
                     "Designed the functionalities and user interface of the system",
                     "Built the website for demonstrating the system using Angularjs and Flask"
                 ]
@@ -198,6 +210,7 @@
                 "misc": "November 2013"
             }]
         }
+        // ,
         // "extra_curricular": {
         //     "items": [{
         //         "title": "Second Place at CS241 Memory Allocation Contest",
@@ -209,7 +222,7 @@
         //         "title": "Finalist Award at Library Mobile App Competition",
         //         "date": "Feb. 2013"
         //     }]
-        // },
+        // }
         // "other_interests": {
         //     "items": [
         //         "Reading books and tech news",
