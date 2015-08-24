@@ -45,6 +45,7 @@
                 "type": "Experience With",
                 "items": [
                     "Angular",
+                    "Ionic",
                     "GWT",
                     "Flask",
                     "Jinja2",
@@ -68,11 +69,6 @@
                     "Developed a web application to improve the interaction between instructors and students"
                 ]
             }, {
-                "headline": "Meetup (Available in Github)",
-                "points": [
-                    "Created a web application built with Angularjs and Firebase to help people share and collaborate on events"
-                ]
-            }, {
                 "headline": "Ischedule",
                 "points": [
                     "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
@@ -86,29 +82,6 @@
         },
         "experience": {
             "items": [{
-                    "title": "Undergraduate Researcher",
-                    "organization": "Department of Computer Science",
-                    "location": "Urbana, IL",
-                    "from": "May 2014",
-                    "to": "Present",
-                    "details": [
-                        "Integrated PCC, a congestion control algorithm, into Chrome QUIC",
-                        "Developed a speed test Chrome extension based on Angularjs and Nodejs",
-                        "Maintained SIGCOMM2014 websites and built a template system for updating the website"
-                    ],
-                    "technology_used": {
-                        "tools": [
-                            "Chrome",
-                            "Jinja2",
-                            "Google Sheet API",
-                            "Angular",
-                            "Semantic UI",
-                            "Firebase",
-                            "Nodejs",
-                            "Heroku"
-                        ]
-                    }
-                }, {
                     "title": "Software Engineer Intern",
                     "organization": "Evernote",
                     "location": "Redwood City, CA",
@@ -116,7 +89,7 @@
                     "to": "August 2015",
                     "details": [
                         "Redesigned the image gallery and work chat on Evernote web client",
-                        "Enhanced the search view and notebook sharing experience on web client",
+                        "Enhanced the search view and notebook sharing experience on Evernote web client",
                         "Developed 7 features and 9 improvements, fixed 40+ bugs"
                     ],
                     "technology_used": {
@@ -193,6 +166,16 @@
         },
         "research_experience": {
             "items": [{
+                "title": "Network at the Speed of Light",
+                "supervisor": "Mo Dong, Ankit Singla, Brighten Godfrey",
+                "from": "May 2014",
+                "to": "Present",
+                "points": [
+                    "Integrated PCC, a congestion control algorithm, into Chrome QUIC",
+                    "Developed a speed test Chrome extension based on Angularjs and Nodejs",
+                    "Maintained SIGCOMM2014 websites and built a template system for updating the website"
+                ]
+            }, {
                 "title": "Healthcare Information System For Mining Drug Side Effects",
                 "supervisor": "Sheng Wang, Chengxiang Zhai",
                 "from": "February",
