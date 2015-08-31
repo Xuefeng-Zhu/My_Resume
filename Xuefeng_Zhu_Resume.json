@@ -24,13 +24,13 @@
                 "type": "My Favorite Languages",
                 "items": [
                     "Python",
-                    "Java",
                     "C"
                 ]
             }, {
                 "type": "Other Languages",
                 "items": [
                     "Javascript",
+                    "Java",
                     "C#",
                     "C++",
                     "Go",
