@@ -15,7 +15,7 @@
             "schools": [{
                 "degree": "BS in Computer Science",
                 "institution": "University of Illinois at Urbana-Champaign",
-                "year": "Dec 2015",
+                "year": "May 2016",
                 "gpa": "4.00/4.00"
             }]
         },
@@ -23,13 +23,13 @@
             "details": [{
                 "type": "My Favorite Languages",
                 "items": [
+                    "Javascript",
                     "Python",
                     "C"
                 ]
             }, {
                 "type": "Other Languages",
                 "items": [
-                    "Javascript",
                     "Java",
                     "C#",
                     "C++",
@@ -46,11 +46,10 @@
                 "items": [
                     "Angular",
                     "Ionic",
-                    "GWT",
+                    "Backbone",
                     "Flask",
                     "Jinja2",
                     "Express",
-                    "BootStrap",
                     "Android",
                     "Unity3D",
                     "Heroku"
@@ -196,6 +195,9 @@
         // ,
         // "extra_curricular": {
         //     "items": [{
+        //         "title": "John R. Pasta Outstanding Undergraduate Award",
+        //         "date": "April 2015"
+        //     }, {
         //         "title": "Second Place at CS241 Memory Allocation Contest",
         //         "date": "Feb. 2014"
         //     }, {
@@ -205,7 +207,7 @@
         //         "title": "Finalist Award at Library Mobile App Competition",
         //         "date": "Feb. 2013"
         //     }]
-        // }
+        // },
         // "other_interests": {
         //     "items": [
         //         "Reading books and tech news",
@@ -214,7 +216,7 @@
         //         "Listening music",
         //         "Watching funny videos"
         //     ]
-        // },
+        // }
         // "contact":{
         //     "src": "../contact.png"
         // }
