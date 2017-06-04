@@ -1,11 +1,11 @@
-## Overview 
-This repository contains my latest resume 
+## Overview
+This repository contains my latest resume
 
-## Credit 
+## Credit
 This project is based on [prat0318/json_resume](https://github.com/prat0318/json_resume)
 
-##Installation 
-	
+##Installation
+
 	$ gem install json_resume
 
 ### Conversion
@@ -14,7 +14,7 @@ This project is based on [prat0318/json_resume](https://github.com/prat0318/json
 `json_resume convert --template templates/default_html.mustache --out=html_pdf Xuefeng_Zhu_Resume.json`
 
 ```
-    json_resume convert [--template=/path/to/custom/template] 
+    json_resume convert [--template=/path/to/custom/template]
                         [--out=html|html_pdf|tex|tex_pdf|md]
                         [--locale=es|en|pt]
                         [--theme=default|classic] <json_input>

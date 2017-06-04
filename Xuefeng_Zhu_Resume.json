@@ -8,7 +8,7 @@
     "github_id": "Xuefeng-Zhu",
     "bio_data": {
         "qr_code": "../contact.png",
-        "email": "xzhu15@illinois.edu",
+        "email": "frankzhu94@gmail.com",
         "phone": "+1 (217) 607-6680",
         "github": "github.com/Xuefeng-Zhu",
         "education": {
@@ -24,72 +24,105 @@
                 "type": "My Favorite Languages",
                 "items": [
                     "Javascript",
-                    "Python",
-                    "C"
+                    "Python"
                 ]
             }, {
                 "type": "Other Languages",
                 "items": [
-                    "Java",
-                    "C#",
+                    "C",
                     "C++",
+                    "C#",
+                    "Java",
                     "Go",
-                    "XML",
-                    "CSS",
-                    "SQL",
-                    "Pascal",
                     "MATLAB",
-                    "Ocaml"
+                    "Ocaml",
+                    "SQL"
                 ]
             }, {
                 "type": "Experience With",
                 "items": [
                     "Angular",
                     "Ionic",
-                    "Backbone",
-                    "Flask",
-                    "Jinja2",
+                    "Meteor",
+                    "React",
+                    "React Native",
+                    "Electron",
+                    "D3",
                     "Express",
-                    "Android",
-                    "Unity3D",
+                    "Flask",
+                    "Firebase",
+                    "MongoDB",
+                    "Redis",
+                    "RabbitMQ",
+                    "Docker",
+                    "Kubernetes",
                     "Heroku"
                 ]
             }]
         },
         "projects": {
             "items": [{
-                "headline": "Google Sheet based SQL Engine (Available in Github)",
+                "headline": "Google Sheet based SQL Engine",
                 "points": [
-                    "Built a SQL engine based on Google Sheet letting users store data and run SQL Query"
+                    "Built a SQL engine letting users store data and run SQL Query in Google Sheet"
                 ]
             }, {
-                "headline": "EverEdu (Available in Github)",
+                "headline": "EverEdu",
                 "points": [
-                    "Developed a web application to improve the interaction between instructors and students"
+                    "Developed a web application to improve the interaction between instructors and students in class"
                 ]
             }, {
-                "headline": "Ischedule",
+                "headline": "Zappa",
                 "points": [
-                    "Wrote an Android app that assists students to organize course schedule and concentrate on lectures"
+                    "Contributed to a serverless python web services framework"
                 ]
             }, {
                 "headline": "Open Source Projects",
                 "points": [
-                    "More open source project contributions on Github"
+                    "Actively contribute to  open source projects on Github"
                 ]
             }]
         },
         "experience": {
             "items": [{
+                    "title": "Software Engineer",
+                    "organization": "Veriflow",
+                    "location": "Champaign, IL",
+                    "from": "December 2015",
+                    "to": "Present",
+                    "details": [
+                        "Migrated the web application from pure Backbone to Marionette with Handlebars",
+                        "Created and enhanced policy timeline and network topology visualization",
+                        "Implemented automatic web client scale assessment test",
+                        "Profiled, analyzed and optimized Javascript and REST endpoint performance"
+                    ],
+                    "technology_used": {
+                        "tools": [
+                            "Backbone",
+                            "Marionette",
+                            "Handlebars",
+                            "D3",
+                            "jQuery",
+                            "Lodash",
+                            "Mocha",
+                            "Sinon",
+                            "Selenium",
+                            "Gulp",
+                            "Flask",
+                            "Socket.IO",
+                            "OrientDB",
+                            "Vagrant"
+                        ]
+                    }
+                },{
                     "title": "Software Engineer Intern",
                     "organization": "Evernote",
                     "location": "Redwood City, CA",
                     "from": "June",
                     "to": "August 2015",
                     "details": [
-                        "Redesigned the image gallery and work chat on Evernote web client",
-                        "Enhanced the search view and notebook sharing experience on Evernote web client",
-                        "Developed 7 features and 9 improvements, fixed 40+ bugs"
+                        "Built the next generation image gallery and work chat for Evernote web client",
+                        "Enhanced the search view and notebook sharing experience on Evernote web client"
                     ],
                     "technology_used": {
                         "tools": [
@@ -102,33 +135,15 @@
                             "Gerrit"
                         ]
                     }
-                }, {
-                    "title": "Director of Information",
-                    "organization": "Engineering Council",
-                    "location": "Urbana, IL",
-                    "from": "April 2014",
-                    "to": "April 2015",
-                    "details": [
-                        "Managed and maintained the mailing list and EC web server, which hosts over 100 society websites",
-                        "Improved and redesigned the EC websites"
-                    ],
-                    "technology_used": {
-                        "tools": [
-                            "Cpanel",
-                            "HTML",
-                            "PHP",
-                            "MySQL",
-                            "Trello"
-                        ]
-                    }
-                }, {
+                },
+                {
                     "title": "Software Development Intern",
                     "organization": "Dow AgroSciences",
                     "location": "Indianapolis, IN",
                     "from": "May",
                     "to": "August 2014",
                     "details": [
-                        "Collaborated with 3 engineers to develop an administration dashboard, which saves administrators 80% time",
+                        "Collaborated with engineers to develop an administration dashboard, which saves administrators 80% time",
                         "Wrote the user and development guideline for the administration dashboard"
                     ],
                     "technology_used": {
@@ -137,30 +152,10 @@
                             "jQuery",
                             "BootStrap",
                             "WCF Restful",
-                            "Oracle"
+                            "OracleDB"
                         ]
                     }
                 }
-                // , {
-                //     "title": "Unity3D Developer and Web Developer",
-                //     "organization": "Department of NPRE",
-                //     "location": "Urbana, IL",
-                //     "from": "April 2013",
-                //     "to": "May 2014",
-                //     "details": [
-                //         "Participated in the project design and programming, including building 3D models and writing scripts",
-                //         "Created a course website for NPRE100"
-                //     ],
-                //     "technology_used": {
-                //         "tools": [
-                //             "Unity3D",
-                //             "C#",
-                //             "HTML",
-                //             "CSS",
-                //             "Javascript"
-                //         ]
-                //     }
-                // }
             ]
         },
         "research_experience": {
@@ -168,11 +163,11 @@
                 "title": "Network at the Speed of Light",
                 "supervisor": "Mo Dong, Ankit Singla, Brighten Godfrey",
                 "from": "May 2014",
-                "to": "Present",
+                "to": "May 2016",
                 "points": [
-                    "Integrated PCC, a congestion control algorithm, into Chrome QUIC",
-                    "Developed a speed test Chrome extension based on Angularjs and Nodejs",
-                    "Maintained SIGCOMM2014 websites and built a template system for updating the website"
+                    "Integrated PCC, a network congestion control algorithm, into QUIC protocol",
+                    "Developed an Internet speed measurement Chrome extension using Angular and Firebase",
+                    "Maintained SIGCOMM2014 website and built a template system for managing the site"
                 ]
             }, {
                 "title": "Healthcare Information System For Mining Drug Side Effects",
@@ -180,45 +175,19 @@
                 "from": "February",
                 "to": "May 2014",
                 "points": [
-                    "Designed the functionalities and user interface of the system",
-                    "Built the website for demonstrating the system using Angularjs and Flask"
+                    "Built and Designed the web client using Angular and Flask"
+                ]
+            }, {
+                "title": "3D Interactive Virtual Reality Instruction Laboratory And Reactor Control Room",
+                "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
+                "from": "April 2013",
+                "to": "May 2014",
+                "points": [
+                    "Built 3D models and wrote interaction scripts"
                 ]
             }]
-        },
-        "papers": {
-            "items": [{
-                "authors": "American Society for Engineering Education",
-                "title": "A 3D, Interactive Virtual Instruction Laboratory And A Virtual Model of A Reactor Control Room",
-                "misc": "November 2013"
-            }]
         }
-        // ,
-        // "extra_curricular": {
-        //     "items": [{
-        //         "title": "John R. Pasta Outstanding Undergraduate Award",
-        //         "date": "April 2015"
-        //     }, {
-        //         "title": "Second Place at CS241 Memory Allocation Contest",
-        //         "date": "Feb. 2014"
-        //     }, {
-        //         "title": "Best Mashup at Library Mobile Web App Code Camp",
-        //         "date": "Nov. 2013"
-        //     }, {
-        //         "title": "Finalist Award at Library Mobile App Competition",
-        //         "date": "Feb. 2013"
-        //     }]
-        // },
-        // "other_interests": {
-        //     "items": [
-        //         "Reading books and tech news",
-        //         "Designing",
-        //         "Running",
-        //         "Listening music",
-        //         "Watching funny videos"
-        //     ]
-        // }
-        // "contact":{
-        //     "src": "../contact.png"
-        // }
     }
 }
+
+
