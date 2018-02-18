@@ -1,193 +1,217 @@
 {
-    "settings": {
-        "icons": true
-    },
-    "firstname": "Xuefeng",
-    "familyname": "Zhu",
-    "linkedin_id": "xuefeng-zhu",
-    "github_id": "Xuefeng-Zhu",
-    "bio_data": {
-        "qr_code": "../contact.png",
-        "email": "frankzhu94@gmail.com",
-        "phone": "+1 (217) 607-6680",
-        "github": "github.com/Xuefeng-Zhu",
-        "education": {
-            "schools": [{
-                "degree": "BS in Computer Science",
-                "institution": "University of Illinois at Urbana-Champaign",
-                "year": "May 2016",
-                "gpa": "4.00/4.00"
-            }]
-        },
-        "skills": {
-            "details": [{
-                "type": "My Favorite Languages",
-                "items": [
-                    "Javascript",
-                    "Python"
-                ]
-            }, {
-                "type": "Other Languages",
-                "items": [
-                    "C",
-                    "C++",
-                    "C#",
-                    "Java",
-                    "Go",
-                    "MATLAB",
-                    "Ocaml",
-                    "SQL"
-                ]
-            }, {
-                "type": "Experience With",
-                "items": [
-                    "Angular",
-                    "Ionic",
-                    "Meteor",
-                    "React",
-                    "React Native",
-                    "Electron",
-                    "D3",
-                    "Express",
-                    "Flask",
-                    "Firebase",
-                    "MongoDB",
-                    "Redis",
-                    "RabbitMQ",
-                    "Docker",
-                    "Kubernetes",
-                    "Heroku"
-                ]
-            }]
-        },
-        "projects": {
-            "items": [{
-                "headline": "Google Sheet based SQL Engine",
-                "points": [
-                    "Built a SQL engine letting users store data and run SQL Query in Google Sheet"
-                ]
-            }, {
-                "headline": "EverEdu",
-                "points": [
-                    "Developed a web application to improve the interaction between instructors and students in class"
-                ]
-            }, {
-                "headline": "Zappa",
-                "points": [
-                    "Contributed to a serverless python web services framework"
-                ]
-            }, {
-                "headline": "Open Source Projects",
-                "points": [
-                    "Actively contribute to  open source projects on Github"
-                ]
-            }]
-        },
-        "experience": {
-            "items": [{
-                    "title": "Software Engineer",
-                    "organization": "Veriflow",
-                    "location": "Champaign, IL",
-                    "from": "December 2015",
-                    "to": "Present",
-                    "details": [
-                        "Migrated the web application from pure Backbone to Marionette with Handlebars",
-                        "Created and enhanced policy timeline and network topology visualization",
-                        "Implemented automatic web client scale assessment test",
-                        "Profiled, analyzed and optimized Javascript and REST endpoint performance"
-                    ],
-                    "technology_used": {
-                        "tools": [
-                            "Backbone",
-                            "Marionette",
-                            "Handlebars",
-                            "D3",
-                            "jQuery",
-                            "Lodash",
-                            "Mocha",
-                            "Sinon",
-                            "Selenium",
-                            "Gulp",
-                            "Flask",
-                            "Socket.IO",
-                            "OrientDB",
-                            "Vagrant"
-                        ]
-                    }
-                },{
-                    "title": "Software Engineer Intern",
-                    "organization": "Evernote",
-                    "location": "Redwood City, CA",
-                    "from": "June",
-                    "to": "August 2015",
-                    "details": [
-                        "Built the next generation image gallery and work chat for Evernote web client",
-                        "Enhanced the search view and notebook sharing experience on Evernote web client"
-                    ],
-                    "technology_used": {
-                        "tools": [
-                            "GWT",
-                            "Thrift",
-                            "Stripes",
-                            "Less",
-                            "Javascript",
-                            "Jira",
-                            "Gerrit"
-                        ]
-                    }
-                },
-                {
-                    "title": "Software Development Intern",
-                    "organization": "Dow AgroSciences",
-                    "location": "Indianapolis, IN",
-                    "from": "May",
-                    "to": "August 2014",
-                    "details": [
-                        "Collaborated with engineers to develop an administration dashboard, which saves administrators 80% time",
-                        "Wrote the user and development guideline for the administration dashboard"
-                    ],
-                    "technology_used": {
-                        "tools": [
-                            "Angular",
-                            "jQuery",
-                            "BootStrap",
-                            "WCF Restful",
-                            "OracleDB"
-                        ]
-                    }
-                }
-            ]
-        },
-        "research_experience": {
-            "items": [{
-                "title": "Network at the Speed of Light",
-                "supervisor": "Mo Dong, Ankit Singla, Brighten Godfrey",
-                "from": "May 2014",
-                "to": "May 2016",
-                "points": [
-                    "Integrated PCC, a network congestion control algorithm, into QUIC protocol",
-                    "Developed an Internet speed measurement Chrome extension using Angular and Firebase",
-                    "Maintained SIGCOMM2014 website and built a template system for managing the site"
-                ]
-            }, {
-                "title": "Healthcare Information System For Mining Drug Side Effects",
-                "supervisor": "Sheng Wang, Chengxiang Zhai",
-                "from": "February",
-                "to": "May 2014",
-                "points": [
-                    "Built and Designed the web client using Angular and Flask"
-                ]
-            }, {
-                "title": "3D Interactive Virtual Reality Instruction Laboratory And Reactor Control Room",
-                "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
-                "from": "April 2013",
-                "to": "May 2014",
-                "points": [
-                    "Built 3D models and wrote interaction scripts"
-                ]
-            }]
+  "settings": {
+    "icons": true
+  },
+  "firstname": "Xuefeng",
+  "familyname": "Zhu",
+  "linkedin_id": "xuefeng-zhu",
+  "github_id": "Xuefeng-Zhu",
+  "bio_data": {
+    "qr_code": "../contact.png",
+    "email": "frankzhu94@gmail.com",
+    "phone": "+1 (217) 607-6680",
+    "github": "github.com/Xuefeng-Zhu",
+    "education": {
+      "schools": [
+        {
+          "degree": "BS in Computer Science",
+          "institution": "University of Illinois at Urbana-Champaign",
+          "year": "May 2016",
+          "gpa": "4.00/4.00"
         }
+      ]
+    },
+    "skills": {
+      "details": [
+        {
+          "type": "Favorite Languages",
+          "items": [
+            "Javascript",
+            "Python"
+          ]
+        },
+        {
+          "type": "Other Languages",
+          "items": [
+            "Ruby",
+            "C",
+            "C++",
+            "Java",
+            "Go",
+            "Ocaml",
+            "SQL"
+          ]
+        },
+        {
+          "type": "Experience With",
+          "items": [
+            "Angular",
+            "React",
+            "Ember",
+            "Ionic",
+            "React Native",
+            "D3",
+            "Meteor",
+            "Express",
+            "Flask",
+            "Rails",
+            "Electron",
+            "Firebase",
+            "MongoDB",
+            "Redis",
+            "RabbitMQ",
+            "Docker",
+            "Kubernetes"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "items": [
+        {
+          "headline": "Google Sheet based SQL Engine",
+          "points": [
+            "A SQL engine letting users store data and run SQL Query in Google Sheet"
+          ]
+        },
+        {
+          "headline": "Clusio",
+          "points": [
+            "A mobile app to store, track, and validate medical procedures in the clinical setting"
+          ]
+        },
+        {
+          "headline": "Zappa",
+          "points": [
+            "A serverless python web services framework"
+          ]
+        },
+        {
+          "headline": "Open Source Projects",
+          "points": [
+            "Actively contribute to open source projects on Github"
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "items": [
+        {
+          "title": "Software Engineer",
+          "organization": "Veriflow",
+          "location": "Champaign, IL",
+          "from": "December 2015",
+          "to": "Present",
+          "details": [
+            "Migrated the web application from Backbone to Marionette, and eventually landed Vue",
+            "Created and enhanced policy timeline and network topology visualization",
+            "Profiled, analyzed and optimized client and web service performance"
+          ],
+          "technology_used": {
+            "tools": [
+              "Backbone",
+              "Marionette",
+              "Vue",
+              "Handlebars",
+              "D3",
+              "jQuery",
+              "Lodash",
+              "Mocha",
+              "Sinon",
+              "Selenium",
+              "Gulp",
+              "Flask",
+              "Socket.IO",
+              "OrientDB",
+              "Vagrant"
+            ]
+          }
+        },
+        {
+          "title": "Software Engineer Intern",
+          "organization": "Evernote",
+          "location": "Redwood City, CA",
+          "from": "June",
+          "to": "August 2015",
+          "details": [
+            "Built the next generation image gallery and work chat for Evernote web client",
+            "Enhanced the search view and notebook sharing experience on Evernote web client"
+          ],
+          "technology_used": {
+            "tools": [
+              "GWT",
+              "Thrift",
+              "Stripes",
+              "Less",
+              "Javascript",
+              "Jira",
+              "Gerrit"
+            ]
+          }
+        },
+        {
+          "title": "Software Development Intern",
+          "organization": "Dow AgroSciences",
+          "location": "Indianapolis, IN",
+          "from": "May",
+          "to": "August 2014",
+          "details": [
+            "Collaborated with engineers to develop an administration dashboard, which saves administrators 80% time",
+            "Wrote the user and development guideline for the administration dashboard"
+          ],
+          "technology_used": {
+            "tools": [
+              "Angular",
+              "jQuery",
+              "BootStrap",
+              "WCF Restful",
+              "OracleDB"
+            ]
+          }
+        }
+      ]
+    },
+    "research_experience": {
+      "items": [
+        {
+          "title": "Theory-based causal modeling toolkit for big data applications",
+          "supervisor": "Zahra Mohagehgh, Justin Pence",
+          "from": "May, 2016",
+          "to": "Present",
+          "points": [
+            "Designed and built the web application used to construct the causal models"
+          ]
+        },
+        {
+          "title": "Network at the Speed of Light",
+          "supervisor": "Mo Dong, Ankit Singla, Brighten Godfrey",
+          "from": "May 2014",
+          "to": "May 2016",
+          "points": [
+            "Integrated PCC, a network congestion control algorithm, into QUIC protocol",
+            "Developed an Internet speed measurement Chrome extension using Angular and Firebase"
+          ]
+        },
+        {
+          "title": "Healthcare Information System For Mining Drug Side Effects",
+          "supervisor": "Sheng Wang, Chengxiang Zhai",
+          "from": "February",
+          "to": "May 2014",
+          "points": [
+            "Built and Designed the web client using Angular and Flask"
+          ]
+        }
+        // ,
+        // {
+        //   "title": "3D Interactive Virtual Reality Instruction Laboratory And Reactor Control Room",
+        //   "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
+        //   "from": "April 2013",
+        //   "to": "May 2014",
+        //   "points": [
+        //     "Built 3D models and wrote interaction scripts"
+        //   ]
+        // }
+      ]
     }
+  }
 }
-
-
