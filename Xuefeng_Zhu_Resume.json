@@ -58,7 +58,7 @@
             "Ethereum",
             "Firebase",
             "MongoDB",
-            "Postgre",
+            "PostgreSQL",
             "Redis",
             "RabbitMQ",
             "Docker",
@@ -130,7 +130,7 @@
           "to": "September 2018",
           "details": [
             "Developed and released an open source analysis report framework Navi",
-            "Built an internal product KPI analysis platform"
+            "Built and enhanced an internal product KPI analysis platform"
           ],
           "technology_used": {
             "tools": [
@@ -153,8 +153,8 @@
           "from": "December 2015",
           "to": "June 2017",
           "details": [
+            "Created policy and network topology manager for intend base network",
             "Migrated the web application from Backbone to Marionette, and eventually landed Vue",
-            "Created and enhanced policy timeline and network topology visualization",
             "Profiled, analyzed and optimized client and web service performance"
           ],
           "technology_used": {
