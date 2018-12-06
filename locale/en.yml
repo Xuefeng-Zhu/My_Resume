@@ -35,6 +35,8 @@ en:
     patents: "Patents"
     # "Research Experience"
     research_experience: "Research Experience"
+    # "Leadership Experience"
+    leadership_experience: "Leadership Experience"
     # "Technical Skills"
     skills: "Technical Skills"
     # "Qualifications summary"

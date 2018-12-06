@@ -35,6 +35,8 @@ pt:
     patents: "Patentes"
     # "Research Experience"
     research_experience: "Experiência de Pesquisa"
+    leadership_experience: "Leadership Experience"
+
     # "Technical Skills"
     skills: "Habilidades Técnicas"
     # "Qualifications summary"

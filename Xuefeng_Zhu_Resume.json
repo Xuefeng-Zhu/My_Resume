@@ -33,11 +33,13 @@
         {
           "type": "Other Languages",
           "items": [
+            "Swift",
+            "Go",
+            "Solidity",
             "Ruby",
             "C",
             "C++",
             "Java",
-            "Go",
             "Ocaml",
             "SQL"
           ]
@@ -45,19 +47,18 @@
         {
           "type": "Experience With",
           "items": [
-            "Angular",
             "React",
-            "Ember",
-            "Ionic",
-            "React Native",
             "D3",
+            "React Native",
+            "iOS",
             "Meteor",
             "Express",
             "Flask",
             "Rails",
-            "Electron",
+            "Ethereum",
             "Firebase",
             "MongoDB",
+            "Postgre",
             "Redis",
             "RabbitMQ",
             "Docker",
@@ -75,15 +76,16 @@
           ]
         },
         {
-          "headline": "Clusio",
+          "headline": "Eth Payroll",
           "points": [
-            "A mobile app to store, track, and validate medical procedures in the clinical setting"
+            "A trustless payroll system built on Ethereum",
+            "Full stack Dapp development course based on this project"
           ]
         },
         {
-          "headline": "Zappa",
+          "headline": "Micro Subscription",
           "points": [
-            "A serverless python web services framework"
+            "Pay per use subscription solution for cloud service based on micro payment and onchain oracle"
           ]
         },
         {
@@ -97,11 +99,59 @@
     "experience": {
       "items": [
         {
+          "title": "Senior Software Engineer",
+          "organization": "ChainScale",
+          "location": "Champaign, IL/Mountain View, CA",
+          "from": "September 2018",
+          "to": "Present",
+          "details": [
+            "Designed and Implemented state channel and cEconomy smart contract",
+            "Developed Celer iOS application",
+            "Maintained developer documentation and support website"
+          ],
+          "technology_used": {
+            "tools": [
+              "Solidity",
+              "Truffle",
+              "Remix",
+              "Ethereum",
+              "Javascript",
+              "Go",
+              "Swift",
+              "Docusaurus"
+            ]
+          }
+        },
+        {
+          "title": "Software Engineer",
+          "organization": "Oath/Yahoo",
+          "location": "Champaign, IL",
+          "from": "June 2017",
+          "to": "September 2018",
+          "details": [
+            "Developed and released an open source analysis report framework Navi",
+            "Built an internal product KPI analysis platform"
+          ],
+          "technology_used": {
+            "tools": [
+              "Ember.js",
+              "Less",
+              "Qunit",
+              "Cucumber",
+              "Sauce Lab",
+              "Lerna",
+              "Express",
+              "Phantom",
+              "Elide"
+            ]
+          }
+        },
+        {
           "title": "Software Engineer",
           "organization": "Veriflow",
           "location": "Champaign, IL",
           "from": "December 2015",
-          "to": "Present",
+          "to": "June 2017",
           "details": [
             "Migrated the web application from Backbone to Marionette, and eventually landed Vue",
             "Created and enhanced policy timeline and network topology visualization",
@@ -109,17 +159,11 @@
           ],
           "technology_used": {
             "tools": [
-              "Backbone",
               "Marionette",
               "Vue",
-              "Handlebars",
               "D3",
-              "jQuery",
               "Lodash",
-              "Mocha",
-              "Sinon",
               "Selenium",
-              "Gulp",
               "Flask",
               "Socket.IO",
               "OrientDB",
@@ -134,7 +178,7 @@
           "from": "June",
           "to": "August 2015",
           "details": [
-            "Built the next generation image gallery and work chat for Evernote web client",
+            "Built the image gallery and next generation work chat for Evernote web client",
             "Enhanced the search view and notebook sharing experience on Evernote web client"
           ],
           "technology_used": {
@@ -143,32 +187,31 @@
               "Thrift",
               "Stripes",
               "Less",
-              "Javascript",
               "Jira",
               "Gerrit"
             ]
           }
-        },
-        {
-          "title": "Software Development Intern",
-          "organization": "Dow AgroSciences",
-          "location": "Indianapolis, IN",
-          "from": "May",
-          "to": "August 2014",
-          "details": [
-            "Collaborated with engineers to develop an administration dashboard, which saves administrators 80% time",
-            "Wrote the user and development guideline for the administration dashboard"
-          ],
-          "technology_used": {
-            "tools": [
-              "Angular",
-              "jQuery",
-              "BootStrap",
-              "WCF Restful",
-              "OracleDB"
-            ]
-          }
         }
+        // ,
+        // {
+        //   "title": "Software Development Intern",
+        //   "organization": "Dow AgroSciences",
+        //   "location": "Indianapolis, IN",
+        //   "from": "May",
+        //   "to": "August 2014",
+        //   "details": [
+        //     "Collaborated with engineers to develop an administration dashboard, which saves administrators 80% time",
+        //     "Wrote the user and development guideline for the administration dashboard"
+        //   ],
+        //   "technology_used": {
+        //     "tools": [
+        //       "Angular",
+        //       "jQuery",
+        //       "BootStrap",
+        //       "WCF Restful",
+        //       "OracleDB"
+        //     ]
+        //   }
       ]
     },
     "research_experience": {
@@ -177,7 +220,7 @@
           "title": "Theory-based causal modeling toolkit for big data applications",
           "supervisor": "Zahra Mohagehgh, Justin Pence",
           "from": "May, 2016",
-          "to": "Present",
+          "to": "May, 2018",
           "points": [
             "Designed and built the web application used to construct the causal models"
           ]
@@ -189,7 +232,7 @@
           "to": "May 2016",
           "points": [
             "Integrated PCC, a network congestion control algorithm, into QUIC protocol",
-            "Developed an Internet speed measurement Chrome extension using Angular and Firebase"
+            "Developed an Internet speed measurement Chrome extension"
           ]
         },
         {
@@ -200,17 +243,54 @@
           "points": [
             "Built and Designed the web client using Angular and Flask"
           ]
+        },
+        {
+          "title": "3D Interactive Virtual Reality Instruction Laboratory And Reactor Control Room",
+          "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
+          "from": "April 2013",
+          "to": "May 2014",
+          "points": [
+            "Built 3D models and wrote interaction scripts"
+          ]
         }
-        // ,
-        // {
-        //   "title": "3D Interactive Virtual Reality Instruction Laboratory And Reactor Control Room",
-        //   "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
-        //   "from": "April 2013",
-        //   "to": "May 2014",
-        //   "points": [
-        //     "Built 3D models and wrote interaction scripts"
-        //   ]
-        // }
+      ]
+    },
+    "leadership_experience": {
+      "items": [
+        {
+          "title": "Director of Information at Engineering Council",
+          "from": "April, 2014",
+          "to": "April, 2015",
+          "points": [
+            "Improved and redesigned the my.ec and the ec.illinois websites",
+            "Managed and maintained the maillist and ec web server",
+            "Cooperated with committees and organized related activities and events"
+          ]
+        }
+      ]
+    },
+    "extra_curricular": {
+      "items": [
+        {
+          "title": "Bronze Tablet Recipient",
+          "date": "2016"
+        },
+        {
+          "title": "John R. Pasta Outstanding Undergraduate Award",
+          "date": "2015"
+        }
+      ]
+    },
+    "memberships": {
+      "committees": [
+        {
+          "title": "Bronze Tablet Recipient",
+          "date": "2016"
+        },
+        {
+          "title": "John R. Pasta Outstanding Undergraduate Award",
+          "date": "2015"
+        }
       ]
     }
   }
