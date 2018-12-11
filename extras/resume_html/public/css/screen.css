@@ -1,6 +1,6 @@
 /* @override http://mark.reid.dev/files/css/screen.css */
 
-/* @override 
+/* @override
 	http://mark.reid.dev/files/css/screen.css
 	http://mark.reid.name/files/css/screen.css
 */
@@ -12,7 +12,7 @@
  *
  * Base font height: 16px
  * Base line length: 24px
- * 
+ *
  * AUTHOR: Mark Reid <mark@reid.name>
  */
 
@@ -24,7 +24,7 @@ body {
 	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "times new roman", Georgia, serif;
 	background-color: whitesmoke;
 	background-position: center -18em;
-	background-repeat: repeat-x; 
+	background-repeat: repeat-x;
 }
 
 /* Hack via Joel Spolsky to make image rescaling nicer in IE */
@@ -34,22 +34,22 @@ img { -ms-interpolation-mode:bicubic; }
 html>body { font-size:16px; }
 p { margin: 0 0 1.5em 0; text-align: justify; }
 
-a { 
-	text-decoration: none; 
+a {
+	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
 }
 a:hover { text-decoration: underline; color: #33f; }
-a.pdf:before { 
+a.pdf:before {
 	margin-right: 1em;
 	content: url(/files/css/icon_pdf.gif); }
 
-h1,h2,h3,h4 { 
-	line-height:1em; 
-	font-size:1.4em; 
-	font-weight: normal; 
-	clear: left; 	
-	font-family: 'lucida grande', sans-serif; 
+h1,h2,h3,h4 {
+	line-height:1em;
+	font-size:1.4em;
+	font-weight: normal;
+	clear: left;
+	font-family: 'lucida grande', sans-serif;
 }
 h1 { margin-bottom: 1em; }
 h2 {
@@ -59,7 +59,7 @@ h2 {
 	font-weight:bold;
 }
 
-hr { 
+hr {
 	border-top: 1px solid silver;
 	border-bottom: none;
 	padding: 0;
@@ -123,8 +123,8 @@ sup { line-height: 1ex; }
 
 .right { float: right; clear: left; }
 .left { float: left; clear: right; }
-.inset { 
-	border: 1px solid silver; 
+.inset {
+	border: 1px solid silver;
 	padding: 2px;
 	margin: 0em 0.8em 0.8em 0.8em;
 }
@@ -144,7 +144,7 @@ blockquote {
 }
 
 .note {
-	padding-top: 0.5em; 
+	padding-top: 0.5em;
 	background-color: #fafaff;
 	border-top: 1px solid silver;
 	border-bottom: 1px solid silver;
@@ -160,7 +160,7 @@ table.neat tr { text-align: center; }
 table.neat th { font-weight: normal; background-color: #eeeeee; }
 table.neat td { background-color: white; }
 table.neat th.title { border-bottom: 1px solid gray; border-top: 1px solid gray; vertical-align: bottom; background-color: lightgrey; }
-caption { 
+caption {
 	color: #333;
 	font-size: 0.875em;
 	margin: 0.875em auto 0 auto;
@@ -200,7 +200,7 @@ ul.compact li { list-style: ;
 	list-style-type: square;
 	list-style-position: inside;
 }
-ul.compact li span.date {	
+ul.compact li span.date {
 	display: none;
 	color: grey;
 	width: 20%;
@@ -260,15 +260,15 @@ ul.compact li a {
 #header:hover .byline a { color: silver; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
 
-body#Work #header a.work, 
-body#Home #header a.home, 
+body#Work #header a.work,
+body#Home #header a.home,
 body#Play #header a.play,
 body#Info #header a.info,
 body#Code #header a.code,
 body#Past #header a.past,
 body#Kith #header a.kith
-{ 
-	border-bottom: 2px solid silver; 
+{
+	border-bottom: 2px solid silver;
 }
 
 /* @end */
@@ -286,9 +286,9 @@ body#Kith #header a.kith
 /* @end */
 
 /* @group Sections */
-.section { 
-	font-size: 87.5%; 
-	line-height: 1.43em; 
+.section {
+	font-size: 87.5%;
+	line-height: 1.43em;
 	margin-bottom: 1.43em;
 	margin-top: 1.43em;
 	margin-left: 7.5em;
@@ -316,29 +316,29 @@ p.excerpt { margin: 0; }
 .excerpt { color: black; }
 
 /* @group Signature */
-.signature { 
-	margin-top: 3em; 
+.signature {
+	margin-top: 3em;
 	position: relative;
 }
-.signature .author { 
-	font-variant: small-caps; 
-	font-style: normal; 
+.signature .author {
+	font-variant: small-caps;
+	font-style: normal;
 	color: black;
 	display: block;
 	margin-bottom: 1.5em;
 }
-.signature .date { 
+.signature .date {
 	font-size: 87.5%;
 	line-height: 1.5em;
-	display: block; 
-	font-variant: small-caps; 
-	font-style: normal; 
+	display: block;
+	font-variant: small-caps;
+	font-style: normal;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-.signature .location { 
-	display: block; 
+.signature .location {
+	display: block;
 	font-size: 87.5%;
 	line-height: 1.5em;
 	position: absolute;
@@ -350,7 +350,7 @@ p.excerpt { margin: 0; }
 /* @group Code */
 pre {
 	margin: 1em 0 1.5em 0;
-	font-size: 0.75em; /* Hack to make code look same size as body font */  
+	font-size: 0.75em; /* Hack to make code look same size as body font */
 	line-height: 1.5em;
 	color: #111;
 	background: #fffff0;
@@ -445,9 +445,9 @@ img.maruku-png { }
 .prev-next {
 	position:relative;
 }
-.prev-next .next{ 
+.prev-next .next{
 	float:right;
-}	
+}
 
 /* tag_box ======================================================== */
 .tag_box {

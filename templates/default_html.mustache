@@ -6,7 +6,7 @@
 	<div id="top-contact">
 		<div class="contact-details">
 			{{#qr_code}}
-			<img src="{{qr_code}}" width="10%" style="position: absolute; right: 29%; top: 4%">
+			<img src="{{qr_code}}" width="10%" style="position: absolute; right: 29%; top: 3%">
 			{{/qr_code}}
 			{{#email}}
 			<div class="icon-envelope icon-square"></div> {{email}}<br />
@@ -19,7 +19,7 @@
 			{{/github}}
 		</div>
 	</div>
-	
+
 	<h1 class="emphnext" style="font-size:3em">{{firstname}} {{familyname}}</h1>
 	{{#stars}}
 	<span class="stars" style="clear:left">
@@ -136,12 +136,12 @@
 				<li>{{{.}}}</li>
 				{{/points}}
 				{{#technology_used}}
-				<li>##technology_used##: 
+				<li>##technology_used##:
 					{{#tools}}
 					<span class="label label-default">{{name}}</span>
 					{{/tools}}
 				</li>
-				{{/technology_used}}			
+				{{/technology_used}}
 			</ul>
 		</li>
 		{{/items}}
@@ -153,19 +153,19 @@
 	<ul>
 		{{#items}}
 		<li>
-			<p style="font-weight:bold; margin-bottom:0">{{title}}</p> 
-			<p style="float: left; margin-bottom:0.3em">{{authors}}</p> 
+			<p style="font-weight:bold; margin-bottom:0">{{title}}</p>
+			<p style="float: left; margin-bottom:0.3em">{{authors}}</p>
 			<p style="float: right; margin-bottom:0.3em">{{{misc}}}</p>
 		</li>
 		{{/items}}
 	</ul>
 	{{/papers}}
-	
+
 	{{#skills}}
 	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
 	<ul class="languages">
 		{{#details}}
-		<li>{{type}}: 
+		<li>{{type}}:
 			{{#items}}
 			<span class="label label-default">{{name}}</span>
 			{{/items}}
