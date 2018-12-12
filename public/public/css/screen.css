@@ -46,7 +46,7 @@ a.pdf:before {
 
 h1,h2,h3,h4 { 
 	line-height:1em; 
-	font-size:1.4em; 
+	font-size:1.5em; 
 	font-weight: normal; 
 	clear: left; 	
 	font-family: 'lucida grande', sans-serif; 
@@ -55,7 +55,7 @@ h1 { margin-bottom: 1em; }
 h2 {
 	font-size: 100%;
 	line-height: 1.5em;
-	margin:0.3em 0 0.1em 0;
+	margin:0.5em 0 0.5em 0;
 	font-weight:bold;
 }
 
@@ -175,11 +175,11 @@ ul {
 /*	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 */
-	line-height: 1.17em;
+	line-height: 1.3em;
 	padding-left: 2.5em;
 }
 ul li {
-	list-style-type: none;
+	list-style-type: square;
 	list-style-position: outside;
 }
 ul li ul li {
