@@ -101,11 +101,11 @@
         {
           "title": "Senior Software Engineer",
           "organization": "Celer Network",
-          "location": "Champaign, IL/Mountain View, CA",
+          "location": "Champaign, IL",
           "from": "September 2018",
           "to": "Present",
           "details": [
-            "Designed and Implemented state channel and cEconomy smart contract",
+            "Designed and Implemented state channel and cEconomy smart contracts",
             "Maintained developer documentation and support website",
             "Developed Celer iOS application"
           ],
@@ -154,7 +154,7 @@
           "to": "June 2017",
           "details": [
             "Created policy and network topology manager for intent-based networking",
-            "Migrated the web application from Backbone to Marionette, and eventually landed Vue",
+            "Migrated Veriflow web client from Backbone to Marionette, and eventually landed Vue",
             "Profiled, analyzed and optimized client and web service performance"
           ],
           "technology_used": {
@@ -178,7 +178,7 @@
           "from": "June 2015",
           "to": "August 2015",
           "details": [
-            "Built the image gallery and next generation work chat for Evernote web client",
+            "Built an image gallery and next generation work chat for Evernote web client",
             "Enhanced the search view and notebook sharing experience on Evernote web client"
           ],
           "technology_used": {
@@ -222,7 +222,7 @@
           "from": "May 2016",
           "to": "May 2018",
           "points": [
-            "Designed and built the web application used to construct the causal models"
+            "Designed and built a web application to construct causal models"
           ]
         },
         {
@@ -241,7 +241,7 @@
           "from": "February 2014",
           "to": "May 2014",
           "points": [
-            "Built and Designed the web client using Angular and Flask"
+            "Designed and Built a web application to explore drug information"
           ]
         },
         {
@@ -262,8 +262,8 @@
           "from": "April 2014",
           "to": "April 2015",
           "points": [
-            "Improved and redesigned the my.ec and the ec.illinois websites",
-            "Managed and maintained the maillist and ec web server",
+            "Improved and redesigned my.ec and ec.illinois websites",
+            "Managed and maintained the ec maillist and the ec web server",
             "Cooperated with committees and organized related activities and events"
           ]
         }
