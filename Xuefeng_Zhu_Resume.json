@@ -70,7 +70,7 @@
     "projects": {
       "items": [
         {
-          "headline": "Google Sheet based SQL Engine",
+          "headline": "SheetSQL",
           "points": [
             "A SQL engine letting users store data and run SQL Query in Google Sheet"
           ]
@@ -79,19 +79,19 @@
           "headline": "Eth Payroll",
           "points": [
             "A trustless payroll system built on Ethereum",
-            "Full stack Dapp development course based on this project"
+            "A full stack Dapp development course based on Eth Payroll project"
           ]
         },
         {
           "headline": "Micro Subscription",
           "points": [
-            "Pay per use subscription solution for cloud service based on micro payment and onchain oracle"
+            "A pay per use subscription solution for cloud service based on micropayment and onchain oracle"
           ]
         },
         {
           "headline": "Open Source Projects",
           "points": [
-            "Actively contribute to open source projects on Github"
+            "Actively contribute to open source projects on Github including Zappa, vectorious, and ember addons"
           ]
         }
       ]
@@ -107,7 +107,7 @@
           "details": [
             "Designed and Implemented state channel and cEconomy smart contracts",
             "Maintained developer documentation and support website",
-            "Developed Celer iOS application"
+            "Developed Celer iOS application and HTTP client"
           ],
           "technology_used": {
             "tools": [
@@ -178,8 +178,8 @@
           "from": "June 2015",
           "to": "August 2015",
           "details": [
-            "Built an image gallery and next generation work chat for Evernote web client",
-            "Enhanced the search view and notebook sharing experience on Evernote web client"
+            "Built an image gallery and next-generation work chat for Evernote web client",
+            "Enhanced search view and notebook sharing experience on Evernote web client"
           ],
           "technology_used": {
             "tools": [
@@ -217,8 +217,8 @@
     "research_experience": {
       "items": [
         {
-          "title": "Theory-based causal modeling toolkit for big data applications",
-          "supervisor": "Zahra Mohagehgh, Justin Pence",
+          "title": "Theory-based Causal Modeling Toolkit for Big Data Applications",
+          "supervisor": "Justin Pence, Zahra Mohagehgh",
           "from": "May 2016",
           "to": "May 2018",
           "points": [
@@ -232,11 +232,11 @@
           "to": "May 2016",
           "points": [
             "Integrated PCC, a network congestion control algorithm, into QUIC protocol",
-            "Developed an Internet speed measurement Chrome extension"
+            "Developed a Chrome extension for Internet speed measurement"
           ]
         },
         {
-          "title": "Healthcare Information System For Mining Drug Side Effects",
+          "title": "Healthcare Information System for Mining Drug Side Effects",
           "supervisor": "Sheng Wang, Chengxiang Zhai",
           "from": "February 2014",
           "to": "May 2014",
@@ -245,12 +245,12 @@
           ]
         },
         {
-          "title": "3D Interactive Virtual Reality Instruction Laboratory And Reactor Control Room",
+          "title": "3D Interactive Virtual Reality Instruction Laboratory and Reactor Control Room",
           "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
           "from": "April 2013",
           "to": "May 2014",
           "points": [
-            "Built 3D models and wrote interaction scripts"
+            "Built 3D models and implemented interaction scripts"
           ]
         }
       ]
@@ -263,8 +263,8 @@
           "to": "April 2015",
           "points": [
             "Improved and redesigned my.ec and ec.illinois websites",
-            "Managed and maintained the ec maillist and the ec web server",
-            "Cooperated with committees and organized related activities and events"
+            "Managed and maintained Engineering Council mailing list and web server",
+            "Cooperated with committees and organized college-wide activities and events "
           ]
         }
       ]
