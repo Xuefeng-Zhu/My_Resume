@@ -25,21 +25,18 @@
       "details": [
         {
           "type": "Favorite Languages",
-          "items": [
-            "Javascript",
-            "Python"
-          ]
+          "items": ["Javascript", "Go"]
         },
         {
           "type": "Other Languages",
           "items": [
-            "Swift",
-            "Go",
+            "Python",
             "Solidity",
             "Ruby",
             "C",
             "C++",
             "Java",
+            "Swift",
             "Ocaml",
             "SQL"
           ]
@@ -101,24 +98,23 @@
         {
           "title": "Senior Software Engineer",
           "organization": "Celer Network",
-          "location": "Champaign, IL",
+          "location": "Mountain View, CA",
           "from": "September 2018",
           "to": "Present",
           "details": [
             "Designed and Implemented state channel and cEconomy smart contracts",
-            "Maintained developer documentation and support website",
-            "Developed Celer iOS application and HTTP client"
+            "Architected and developed a sidechain system to guard channel state",
+            "Built a web client to interact with cEconomy smart contracts"
           ],
           "technology_used": {
             "tools": [
               "Solidity",
               "Truffle",
-              "Remix",
               "Ethereum",
               "Javascript",
+              "Cosmos",
               "Go",
-              "Swift",
-              "Docusaurus"
+              "React"
             ]
           }
         },
@@ -182,36 +178,9 @@
             "Enhanced search view and notebook sharing experience on Evernote web client"
           ],
           "technology_used": {
-            "tools": [
-              "GWT",
-              "Thrift",
-              "Stripes",
-              "Less",
-              "Jira",
-              "Gerrit"
-            ]
+            "tools": ["GWT", "Thrift", "Stripes", "Less", "Jira", "Gerrit"]
           }
         }
-        // ,
-        // {
-        //   "title": "Software Development Intern",
-        //   "organization": "Dow AgroSciences",
-        //   "location": "Indianapolis, IN",
-        //   "from": "May",
-        //   "to": "August 2014",
-        //   "details": [
-        //     "Collaborated with engineers to develop an administration dashboard, which saves administrators 80% time",
-        //     "Wrote the user and development guideline for the administration dashboard"
-        //   ],
-        //   "technology_used": {
-        //     "tools": [
-        //       "Angular",
-        //       "jQuery",
-        //       "BootStrap",
-        //       "WCF Restful",
-        //       "OracleDB"
-        //     ]
-        //   }
       ]
     },
     "research_experience": {
@@ -234,62 +203,6 @@
             "Integrated PCC, a network congestion control algorithm, into QUIC protocol",
             "Developed a Chrome extension for Internet speed measurement"
           ]
-        },
-        {
-          "title": "Healthcare Information System for Mining Drug Side Effects",
-          "supervisor": "Sheng Wang, Chengxiang Zhai",
-          "from": "February 2014",
-          "to": "May 2014",
-          "points": [
-            "Designed and Built a web application to explore drug information"
-          ]
-        },
-        {
-          "title": "3D Interactive Virtual Reality Instruction Laboratory and Reactor Control Room",
-          "supervisor": "Yoshinori Satoh, Ye Li, Rizwan Uddin",
-          "from": "April 2013",
-          "to": "May 2014",
-          "points": [
-            "Built 3D models and implemented interaction scripts"
-          ]
-        }
-      ]
-    },
-    "leadership_experience": {
-      "items": [
-        {
-          "title": "Director of Information at Engineering Council",
-          "from": "April 2014",
-          "to": "April 2015",
-          "points": [
-            "Improved and redesigned my.ec and ec.illinois websites",
-            "Managed and maintained Engineering Council mailing list and web server",
-            "Cooperated with committees and organized college-wide activities and events "
-          ]
-        }
-      ]
-    },
-    "extra_curricular": {
-      "items": [
-        {
-          "title": "Bronze Tablet Recipient",
-          "date": "2016"
-        },
-        {
-          "title": "John R. Pasta Outstanding Undergraduate Award",
-          "date": "2015"
-        }
-      ]
-    },
-    "memberships": {
-      "committees": [
-        {
-          "title": "Bronze Tablet Recipient",
-          "date": "2016"
-        },
-        {
-          "title": "John R. Pasta Outstanding Undergraduate Award",
-          "date": "2015"
         }
       ]
     }
