@@ -63,9 +63,36 @@ bundle exec ruby bin/json_resume convert --out=tex Xuefeng_Zhu_Resume.json
 bundle exec ruby bin/json_resume convert --out=tex --theme=classic Xuefeng_Zhu_Resume.json
 ```
 
-PDF output requires system tooling that is intentionally not bundled:
+Generate the checked-in PDF with:
 
-- `--out=html_pdf` requires `wkhtmltopdf` on `PATH`.
+```sh
+bundle exec rake pdf
+```
+
+HTML PDF output uses the standalone Chromium `chrome-headless-shell` renderer.
+The CLI discovers it on `PATH` and in common Playwright/Puppeteer browser
+caches. To install it without adding a project dependency:
+
+```sh
+npx @puppeteer/browsers install chrome-headless-shell@stable
+```
+
+The installer prints the executable path. If the CLI cannot discover it, set
+that path explicitly. The override is trusted executable code: only point it
+at a `chrome-headless-shell` binary from a source you trust.
+
+```sh
+JSON_RESUME_PDF_RENDERER=/absolute/path/to/chrome-headless-shell \
+  bundle exec rake pdf
+```
+
+The renderer runs locally with a hard timeout, and `resume.pdf` is only
+replaced after the new file passes basic PDF validation. The source JSON and
+custom templates are treated as untrusted while rendering: generated pages
+block scripts, network requests, frames, and objects.
+
+LaTeX PDF output requires separate system tooling:
+
 - `--out=tex_pdf` requires `pdflatex`; the default theme also requires
   `kpsewhich` and the `moderncv` package.
 

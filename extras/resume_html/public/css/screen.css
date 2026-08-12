@@ -525,6 +525,27 @@ img.maruku-png { }
 	font-size: 90%;
 }
 
+.education-details {
+	clear: both;
+}
+
+.resume-entry-header {
+	align-items: baseline;
+	display: flex;
+	gap: 1em;
+	justify-content: space-between;
+}
+
+.resume-entry-title {
+	min-width: 0;
+}
+
+.resume-entry-date {
+	flex: 0 0 auto;
+	text-align: right;
+	white-space: nowrap;
+}
+
 .right {
 	float: right;
 }

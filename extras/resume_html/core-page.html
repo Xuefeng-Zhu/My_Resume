@@ -5,7 +5,8 @@
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; script-src 'none'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+		<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="public/css/screen.css" />
 		<link rel="stylesheet" type="text/css" href="public/css/mobile.css" />
 		{{#settings}}
@@ -13,6 +14,7 @@
 			<link rel="stylesheet" type="text/css" href="public/css/icons.data.svg.css" />
 			{{/icons}}
 		{{/settings}}
+		<link rel="stylesheet" type="text/css" href="public/css/print.css" media="print" />
 	</head>
 	<body>
 		<div id="site" style="margin: 0.0em auto 0.0em auto; max-width: 52em;">

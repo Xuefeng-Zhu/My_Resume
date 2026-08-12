@@ -9,6 +9,24 @@ describe 'json_resume CLI' do
   let(:executable) { File.join(project_root, 'bin', 'json_resume') }
   let(:resume_json) { File.join(project_root, 'Xuefeng_Zhu_Resume.json') }
 
+  def write_fake_renderer(path, body)
+    FileUtils.mkdir_p(File.dirname(path))
+    File.write(path, "#!/bin/sh\nset -eu\n#{body}\n")
+    FileUtils.chmod(0o755, path)
+  end
+
+  def pdf_output_parser
+    <<~'SH'
+      output=''
+      for argument in "$@"; do
+        case "$argument" in
+          --print-to-pdf=*) output=${argument#*=} ;;
+        esac
+      done
+      test -n "$output"
+    SH
+  end
+
   it 'shows help without loading optional PDF tooling' do
     stdout, stderr, status = Open3.capture3(RbConfig.ruby, executable, 'help')
 
@@ -128,6 +146,133 @@ describe 'json_resume CLI' do
         expect(status).to be_success, "#{stdout}\n#{stderr}"
         expect(File.read(output_path)).not_to include('1.23')
       end
+    end
+  end
+
+  it 'generates HTML PDF output with an injected headless renderer' do
+    Dir.mktmpdir('json resume pdf spec ') do |destination|
+      renderer = File.join(destination, 'tools with spaces', 'fake renderer')
+      write_fake_renderer(
+        renderer,
+        pdf_output_parser + <<~'SH'
+          printf '%s\n' '%PDF-1.4' '1 0 obj' '<<>>' 'endobj' 'trailer' '<<>>' '%%EOF' > "$output"
+        SH
+      )
+
+      stdout, stderr, status = Open3.capture3(
+        { 'JSON_RESUME_PDF_RENDERER' => renderer },
+        RbConfig.ruby,
+        executable,
+        'convert',
+        '--out=html_pdf',
+        resume_json,
+        :chdir => destination
+      )
+
+      expect(status).to be_success, "#{stdout}\n#{stderr}"
+      expect(File.binread(File.join(destination, 'resume.pdf'), 5)).to eq('%PDF-')
+      expect(stdout).to include('Generated resume.pdf')
+      expect(Dir.glob(File.join(destination, '.json-resume-pdf-*'))).to be_empty
+    end
+  end
+
+  it 'preserves an existing PDF when the renderer output is invalid' do
+    Dir.mktmpdir('json-resume-invalid-pdf-spec') do |destination|
+      renderer = File.join(destination, 'fake-renderer')
+      write_fake_renderer(
+        renderer,
+        pdf_output_parser + <<~'SH'
+          printf '%s\n' 'not a PDF' > "$output"
+        SH
+      )
+      existing_pdf = File.join(destination, 'resume.pdf')
+      File.write(existing_pdf, 'previous PDF')
+
+      stdout, stderr, status = Open3.capture3(
+        { 'JSON_RESUME_PDF_RENDERER' => renderer },
+        RbConfig.ruby,
+        executable,
+        'convert',
+        '--out=html_pdf',
+        resume_json,
+        :chdir => destination
+      )
+
+      expect(status).not_to be_success
+      expect("#{stdout}\n#{stderr}").to include('invalid PDF')
+      expect(File.read(existing_pdf)).to eq('previous PDF')
+      expect(Dir.glob(File.join(destination, '.json-resume-pdf-*'))).to be_empty
+    end
+  end
+
+  it 'stops a timed-out renderer without replacing the current PDF' do
+    Dir.mktmpdir('json-resume-timeout-pdf-spec') do |destination|
+      renderer = File.join(destination, 'fake-renderer')
+      write_fake_renderer(renderer, "sleep 5")
+      existing_pdf = File.join(destination, 'resume.pdf')
+      File.write(existing_pdf, 'previous PDF')
+
+      stdout, stderr, status = Open3.capture3(
+        {
+          'JSON_RESUME_PDF_RENDERER' => renderer,
+          'JSON_RESUME_PDF_TIMEOUT' => '0.2'
+        },
+        RbConfig.ruby,
+        executable,
+        'convert',
+        '--out=html_pdf',
+        resume_json,
+        :chdir => destination
+      )
+
+      expect(status).not_to be_success
+      expect("#{stdout}\n#{stderr}").to include('timed out')
+      expect(File.read(existing_pdf)).to eq('previous PDF')
+      expect(Dir.glob(File.join(destination, '.json-resume-pdf-*'))).to be_empty
+    end
+  end
+
+  it 'reports an invalid explicit PDF renderer path' do
+    Dir.mktmpdir('json-resume-missing-pdf-spec') do |destination|
+      stdout, stderr, status = Open3.capture3(
+        { 'JSON_RESUME_PDF_RENDERER' => File.join(destination, 'missing-renderer') },
+        RbConfig.ruby,
+        executable,
+        'convert',
+        '--out=html_pdf',
+        resume_json,
+        :chdir => destination
+      )
+
+      expect(status).not_to be_success
+      expect("#{stdout}\n#{stderr}").to include('is not an executable file')
+      expect(File).not_to exist(File.join(destination, 'resume.pdf'))
+    end
+  end
+
+  it 'reports an invalid PDF timeout value without starting the renderer' do
+    Dir.mktmpdir('json-resume-timeout-value-spec') do |destination|
+      renderer = File.join(destination, 'fake-renderer')
+      marker = File.join(destination, 'renderer-started')
+      write_fake_renderer(renderer, "touch #{marker.inspect}")
+
+      stdout, stderr, status = Open3.capture3(
+        {
+          'JSON_RESUME_PDF_RENDERER' => renderer,
+          'JSON_RESUME_PDF_TIMEOUT' => 'not-a-number'
+        },
+        RbConfig.ruby,
+        executable,
+        'convert',
+        '--out=html_pdf',
+        resume_json,
+        :chdir => destination
+      )
+
+      expect(status).not_to be_success
+      expect("#{stdout}\n#{stderr}").to include('must be a positive number')
+      expect(File).not_to exist(marker)
+      expect(Dir.glob(File.join(destination, '.json-resume-pdf-*'))).to be_empty
     end
   end
 end

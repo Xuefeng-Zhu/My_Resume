@@ -6,7 +6,6 @@ ruby ">= 2.6.0"
 # runtime bundled with the development machine.
 gem "i18n", "~> 1.14.0"
 gem "mustache", "~> 1.1"
-gem "pdfkit", "~> 0.8.7"
 gem "thor", ">= 1.0", "< 2.0"
 gem "webrick", "~> 1.8"
 

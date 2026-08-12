@@ -38,19 +38,25 @@
 
 	{{#education}}
 	<h2><span class="icon-mortar-board icon-rect"></span> ##education##</h2>
+	<div class="education-details">
 		{{#schools}}
-		<b style="float: left; margin-bottom: 0">{{institution}}</b>
-		<p style="float: right; margin-bottom: 0">{{year}}</p>
-		<p style="clear:left; float: left; margin-bottom: 0">{{degree}}</p>
-		{{#show_gpa}}
-		<i style="float: right; margin-bottom: 0">Cumulative GPA: {{gpa}}</i>
-		{{/show_gpa}}
+		<div class="resume-entry-header">
+			<b class="resume-entry-title">{{institution}}</b>
+			<span class="resume-entry-date">{{year}}</span>
+		</div>
+		<div class="resume-entry-header">
+			<span class="resume-entry-title">{{degree}}</span>
+			{{#show_gpa}}
+			<i class="resume-entry-date">Cumulative GPA: {{gpa}}</i>
+			{{/show_gpa}}
+		</div>
 		{{/schools}}
-		<ul style="clear:both">
+		<ul>
 			{{#details}}
 			<li>{{{.}}}</li>
 			{{/details}}
 		</ul>
+	</div>
 
 	{{/education}}
 
@@ -58,8 +64,11 @@
 	<h2><span class="icon-briefcase icon-square"></span> ##experience##</h2>
 	<ul>
 		{{#items}}
-		<li><b>{{title}}</b>,&nbsp;{{{organization}}}{{#location}}, {{{location}}}{{/location}}
-			<span class="right">{{from}} - {{to}}</span>
+		<li>
+			<div class="resume-entry-header">
+				<span class="resume-entry-title"><b>{{title}}</b>,&nbsp;{{{organization}}}{{#location}}, {{{location}}}{{/location}}</span>
+				<span class="resume-entry-date">{{from}} - {{to}}</span>
+			</div>
 			<ul>
 				{{#details}}
 				<li>{{{.}}}</li>
@@ -82,8 +91,10 @@
 	<ul>
 		{{#items}}
 		<li>
-			<b>{{title}}</b>
-			<span class="right">{{from}} - {{to}}</span>
+			<div class="resume-entry-header">
+				<b class="resume-entry-title">{{title}}</b>
+				<span class="resume-entry-date">{{from}} - {{to}}</span>
+			</div>
 			<p style="margin-bottom:0">Supervised by: {{{supervisor}}}</p>
 			<ul>
 				{{#points}}
@@ -100,8 +111,10 @@
 	<ul>
 		{{#items}}
 		<li>
-			<b>{{title}}</b>
-			<span class="right">{{from}} - {{to}}</span>
+			<div class="resume-entry-header">
+				<b class="resume-entry-title">{{title}}</b>
+				<span class="resume-entry-date">{{from}} - {{to}}</span>
+			</div>
 			<ul>
 				{{#points}}
 				<li>{{{.}}}</li>
@@ -113,15 +126,19 @@
 	{{/leadership_experience}}
 
 	{{#extra_curricular}}
+	<div class="resume-section-keep">
 	<h2><span class="icon-bookmark icon-square"></span> ##extra_curricular##</h2>
 	<ul>
 		{{#items}}
 		<li>
-		{{title}}
-		<span class="right">{{date}}</span>
+		<div class="resume-entry-header">
+			<span class="resume-entry-title">{{title}}</span>
+			<span class="resume-entry-date">{{date}}</span>
+		</div>
 		</li>
 		{{/items}}
 	</ul>
+	</div>
 	{{/extra_curricular}}
 
 	{{#projects}}

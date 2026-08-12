@@ -14,6 +14,15 @@ task :build do
      "Xuefeng_Zhu_Resume.json"
 end
 
+desc "Generate resume.pdf with chrome-headless-shell"
+task :pdf do
+  sh RbConfig.ruby,
+     "bin/json_resume",
+     "convert",
+     "--out=html_pdf",
+     "Xuefeng_Zhu_Resume.json"
+end
+
 desc "Build and serve the resume locally (HOST=127.0.0.1 PORT=8000)"
 task serve: :build do
   host = ENV.fetch("HOST", "127.0.0.1")

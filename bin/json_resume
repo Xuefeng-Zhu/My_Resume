@@ -5,6 +5,9 @@ require 'thor'
 require 'mustache'
 require_relative '../lib/json_resume'
 require 'fileutils'
+require 'rbconfig'
+require 'tmpdir'
+require 'timeout'
 require 'zlib'
 
 class String
@@ -88,46 +91,30 @@ class JsonResumeCLI < Thor
     end
 
     def convert_to_html_pdf(json_input, template, dest=Dir.pwd)
-      wkhtmltopdf_path = executable_path('wkhtmltopdf')
-      unless wkhtmltopdf_path
-        raise Thor::Error,
-              'HTML PDF output requires wkhtmltopdf on PATH. HTML generation is available with --out=html.'
+      renderer = pdf_renderer_path
+      unless renderer
+        raise Thor::Error, <<~MESSAGE.strip
+          HTML PDF output requires chrome-headless-shell.
+          Install it with: npx @puppeteer/browsers install chrome-headless-shell@stable
+          Then set JSON_RESUME_PDF_RENDERER to the executable path if it is not discovered automatically.
+        MESSAGE
       end
 
-      require 'pdfkit'
+      destination_dir = File.expand_path(dest)
+      destination_pdf = File.join(destination_dir, 'resume.pdf')
+      FileUtils.mkdir_p(destination_dir)
 
-      tmp_dir = ".tmp_resume"
-      convert_to_html(json_input, template, dest, tmp_dir)
-      PDFKit.configure do |config|
-        config.wkhtmltopdf = wkhtmltopdf_path
-        config.default_options = {
-          # :footer_right => "Page [page] of [toPage]    .\n",
-          :footer_font_size => 10,
-          :footer_font_name => "Georgia"
-        }
+      Dir.mktmpdir('.json-resume-pdf-', destination_dir) do |workspace|
+        convert_to_html(json_input, template, workspace, 'resume')
+        html_path = File.join(workspace, 'resume', 'core-page.html')
+        staged_pdf = File.join(workspace, 'resume.pdf')
+
+        render_html_pdf(renderer, html_path, staged_pdf, workspace)
+        validate_pdf(staged_pdf)
+        File.rename(staged_pdf, destination_pdf)
       end
-      html_file = File.new("#{dest}/#{tmp_dir}/index.html")
-      # Purge the mobile css properties so that wkhtmlpdf not uses them.
-      File.open("#{dest}/#{tmp_dir}/public/css/mobile.css", 'w') {}
 
-      pdf_options = {
-        :margin_top => 0.0,
-        :margin_left=> 0.0, 
-        :margin_right => 0.0,
-        :margin_bottom => 0.0,
-        :page_size => 'Letter',
-        :allow => File.expand_path("#{dest}/#{tmp_dir}")
-      }
-      kit = PDFKit.new(html_file, pdf_options)
-
-      begin
-        kit.to_file(dest+"/resume.pdf")
-      rescue Errno::ENOENT => e
-        puts "\nTry: sudo apt-get update; sudo apt-get install libxtst6 libfontconfig1".green
-        raise e
-      end
-      FileUtils.rm_rf "#{dest}/#{tmp_dir}"
-      msg = "\nGenerated resume.pdf at #{dest}.".green
+      "\nGenerated resume.pdf at #{destination_dir}.".green
     end
 
     def convert_to_tex(json_input, template, dest=Dir.pwd, filename="resume.tex")
@@ -167,6 +154,154 @@ class JsonResumeCLI < Thor
       end
 
       nil
+    end
+
+    def pdf_renderer_path
+      override = ENV['JSON_RESUME_PDF_RENDERER']
+      if override && !override.strip.empty?
+        candidate = File.expand_path(override)
+        unless File.file?(candidate) && File.executable?(candidate)
+          raise Thor::Error,
+                "JSON_RESUME_PDF_RENDERER is not an executable file: #{candidate}"
+        end
+        return candidate
+      end
+
+      path_renderer = executable_path('chrome-headless-shell') ||
+                      executable_path('chrome-headless-shell.exe')
+      return path_renderer if path_renderer
+
+      pdf_renderer_cache_candidates
+        .select { |candidate| File.file?(candidate) && File.executable?(candidate) }
+        .max_by { |candidate| pdf_renderer_sort_key(candidate) }
+    end
+
+    def pdf_renderer_cache_candidates
+      home = Dir.home
+      roots = [
+        ENV['PLAYWRIGHT_BROWSERS_PATH'],
+        File.join(home, 'Library', 'Caches', 'ms-playwright'),
+        File.join(home, '.cache', 'ms-playwright'),
+        File.join(home, 'AppData', 'Local', 'ms-playwright'),
+        ENV['PUPPETEER_CACHE_DIR'],
+        File.join(home, 'Library', 'Caches', 'puppeteer', 'chrome-headless-shell'),
+        File.join(home, '.cache', 'puppeteer', 'chrome-headless-shell'),
+        File.join(home, 'AppData', 'Local', 'puppeteer', 'chrome-headless-shell')
+      ].compact.reject(&:empty?).uniq
+
+      roots.flat_map do |root|
+        %w[chrome-headless-shell chrome-headless-shell.exe].flat_map do |executable|
+          Dir.glob(File.join(File.expand_path(root), '**', executable))
+        end
+      end.uniq
+    end
+
+    def pdf_renderer_sort_key(path)
+      components = path.split(File::SEPARATOR)
+      revision = components.map do |component|
+        component[/chromium_headless_shell-(\d+)/, 1] ||
+          (component.match?(/\A\d+(?:\.\d+){2,}\z/) ? component : nil)
+      end.compact.last
+      version = revision.to_s.split('.').map(&:to_i)
+
+      [version, File.mtime(path).to_f, path]
+    end
+
+    def render_html_pdf(renderer, html_path, output_path, workspace)
+      log_path = File.join(workspace, 'renderer.log')
+      profile_path = File.join(workspace, 'chromium-profile')
+      command = [
+        renderer,
+        '--headless',
+        '--disable-background-networking',
+        '--disable-component-update',
+        '--disable-default-apps',
+        '--disable-extensions',
+        '--disable-gpu',
+        '--no-first-run',
+        '--no-default-browser-check',
+        '--no-pdf-header-footer',
+        '--timeout=5000',
+        "--user-data-dir=#{profile_path}",
+        "--print-to-pdf=#{output_path}",
+        File.expand_path(html_path)
+      ]
+
+      status = nil
+      File.open(log_path, 'w') do |log|
+        pid = Process.spawn(*command, :out => log, :err => log, :pgroup => true)
+        status = wait_for_pdf_renderer(pid)
+      end
+
+      return if status.success?
+
+      outcome = status.signaled? ? "signal #{status.termsig}" : "exit #{status.exitstatus}"
+      details = File.read(log_path).lines.last(12).join.strip
+      message = "PDF renderer failed (#{outcome})."
+      message += "\n#{details}" unless details.empty?
+      raise Thor::Error, message
+    rescue Errno::ENOENT => error
+      raise Thor::Error, "PDF renderer could not be started: #{error.message}"
+    end
+
+    def wait_for_pdf_renderer(pid)
+      timeout_seconds = parse_pdf_timeout
+
+      Timeout.timeout(timeout_seconds) do
+        Process.wait2(pid).last
+      end
+    rescue Timeout::Error
+      terminate_pdf_renderer(pid)
+      raise Thor::Error,
+            "PDF renderer timed out after #{timeout_seconds} seconds and was stopped."
+    end
+
+    def parse_pdf_timeout
+      timeout_seconds = Float(ENV.fetch('JSON_RESUME_PDF_TIMEOUT', '30'))
+      raise ArgumentError unless timeout_seconds.finite? && timeout_seconds > 0
+
+      timeout_seconds
+    rescue ArgumentError
+      raise Thor::Error, 'JSON_RESUME_PDF_TIMEOUT must be a positive number.'
+    end
+
+    def terminate_pdf_renderer(pid)
+      process_target = windows_platform? ? pid : -pid
+      Process.kill('TERM', process_target)
+      deadline = Process.clock_gettime(Process::CLOCK_MONOTONIC) + 0.5
+
+      loop do
+        result = Process.waitpid2(pid, Process::WNOHANG)
+        return result.last if result
+        break if Process.clock_gettime(Process::CLOCK_MONOTONIC) >= deadline
+        sleep 0.05
+      end
+
+      Process.kill('KILL', process_target)
+      Process.wait2(pid).last
+    rescue Errno::ECHILD, Errno::EINVAL, Errno::ESRCH, NotImplementedError
+      nil
+    end
+
+    def windows_platform?
+      RbConfig::CONFIG['host_os'].match?(/mswin|mingw|cygwin/i)
+    end
+
+    def validate_pdf(path)
+      unless File.file?(path) && File.size(path) > 8
+        raise Thor::Error, 'PDF renderer did not create a PDF file.'
+      end
+
+      File.open(path, 'rb') do |file|
+        header = file.read(5)
+        tail_size = [File.size(path), 2048].min
+        file.seek(-tail_size, IO::SEEK_END)
+        trailer = file.read(tail_size)
+
+        unless header == '%PDF-' && trailer.include?('%%EOF')
+          raise Thor::Error, 'PDF renderer produced an invalid PDF file.'
+        end
+      end
     end
 
     def convert_to_md(json_input, template, dest=Dir.pwd)
