@@ -32,14 +32,14 @@ describe "#add_linkedin_github_url" do
     hash = {"linkedin_id"=>"xyz"}
     formatter = JsonResume::Formatter.new hash 
     formatter.add_linkedin_github_url
-    expect(formatter.hash["linkedin_url"]).to eq("http://linkedin.com/in/xyz")
+    expect(formatter.hash["linkedin_url"]).to eq("https://linkedin.com/in/xyz")
   end
 
   it 'creates github url if github id present' do
     hash = {"github_id"=>"xyz"}
     formatter = JsonResume::Formatter.new hash 
     formatter.add_linkedin_github_url
-    expect(formatter.hash["github_url"]).to eq("http://github.com/xyz")
+    expect(formatter.hash["github_url"]).to eq("https://github.com/xyz")
   end
   
   it 'doesnt create url if id isnt present' do
@@ -53,10 +53,11 @@ end
 
 describe "#gpa_purger" do
   it 'removes gpa if not opted for' do
-    hash = {'bio_data' => {'education' => {'show_gpa' => false, 'schools' => []}}}
+    hash = {'bio_data' => {'education' => {'show_gpa' => false, 'schools' => [{'gpa' => '1.23'}]}}}
     formatter = JsonResume::Formatter.new hash
     formatter.purge_gpa
     expect(formatter.hash['bio_data']['education']['show_gpa']).to be_nil
+    expect(formatter.hash['bio_data']['education']['schools'][0]['gpa']).to be_nil
   end
 
   it 'removes gpa if gpa not mentioned' do
@@ -64,5 +65,12 @@ describe "#gpa_purger" do
     formatter = JsonResume::Formatter.new hash
     formatter.purge_gpa
     expect(formatter.hash['bio_data']['education']['show_gpa']).to be_nil
+  end
+
+  it 'shows an available gpa by default' do
+    hash = {'bio_data' => {'education' => {'schools' => [{'gpa' => '4.00'}]}}}
+    formatter = JsonResume::Formatter.new hash
+    formatter.purge_gpa
+    expect(formatter.hash['bio_data']['education']['show_gpa']).to eq(true)
   end
 end

@@ -1,8 +1,8 @@
 require_relative 'formatter_html'
 require_relative 'formatter_latex'
 require_relative 'formatter_md'
-require 'rest-client'
 require 'json'
+require 'open-uri'
 
 module JsonResume
 	class Reader
@@ -11,8 +11,8 @@ module JsonResume
 		def initialize(json_input, options)
       output_type = options[:output_type] || "html" #default html, others latex, md
 			@json_string = case json_input
+						   when /\Ahttps?:\/\//i then URI.open(json_input, &:read)
 						   when /\.json$/i then File.read(json_input)
-               when /^(http|https|www)/ then RestClient.get(json_input)
 						   else json_input
 						   end
       @output_type = output_type
@@ -34,4 +34,3 @@ module JsonResume
     end
 	end
 end    
-

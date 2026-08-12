@@ -82,7 +82,7 @@
 \begin{itemize}
 <%#schools%>
 \item
-	\ressubheading{<%institution%>}{<%graduation_year%>}{<%degree%><%#major%>, <%major%><%/major%>}{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
+	\ressubheading{<%institution%>}{<%year%>}{<%degree%><%#major%>, <%major%><%/major%>}{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}
 <%/schools%>
 \end{itemize}
 <%/education%>
@@ -101,7 +101,7 @@
 \begin{itemize}
 <%#items%>
 \item
-	\ressubheading{<%organisation%>}{<%location%>}{<%title%>}{<%from%> – <%to%>}
+	\ressubheading{<%organization%>}{<%location%>}{<%title%>}{<%from%> – <%to%>}
 	\begin{itemize}
 		<%#details%>\resitem{<%& .%>}<%/details%>
 		<%#technology_used%>
@@ -113,7 +113,7 @@
 \end{itemize}
 <%/experience%>
 
-<%#other_projects%>
+<%#projects%>
 \resheading{##other_projects##}
 \begin{itemize}
 <%#items%>
@@ -126,7 +126,7 @@
 		\end{itemize}
 <%/items%>
 \end{itemize}
-<%/other_projects%>
+<%/projects%>
 
 <%#grad_courses%>
 \resheading{##grad_courses##}
@@ -158,13 +158,25 @@
 \resheading{##research_experience##}
 \begin{itemize}
 <%#items%>
-	\resitem{<%title%>, <%organisation%> <%location%> (<%from%> – <%to%>)}
+	\resitem{<%title%><%#supervisor%>, supervised by <%supervisor%><%/supervisor%> <%location%> (<%from%> – <%to%>)}
 		\begin{itemize}
 		<%#points%>\resitem{<%& .%>}<%/points%>
 	    \end{itemize}
 <%/items%>
 \end{itemize}
 <%/research_experience%>
+
+<%#leadership_experience%>
+\resheading{##leadership_experience##}
+\begin{itemize}
+<%#items%>
+	\resitem{<%title%> (<%from%> – <%to%>)}
+		\begin{itemize}
+		<%#points%>\resitem{<%& .%>}<%/points%>
+		\end{itemize}
+<%/items%>
+\end{itemize}
+<%/leadership_experience%>
 
 
 <%#patents%>
@@ -190,7 +202,7 @@
 \resheading{##memberships##}
 \begin{itemize}
 	<%#committees%>
-		\resitem{<%& .%>}
+		\resitem{<%title%><%#date%> (<%date%>)<%/date%>}
 	<%/committees%>
 \end{itemize}
 <%/memberships%>
@@ -199,7 +211,7 @@
 \resheading{##extra_curricular##}
 \begin{itemize}
 	<%#items%>
-		\resitem{<%& .%>}
+		\resitem{<%title%><%#date%> (<%date%>)<%/date%>}
 	<%/items%>
 \end{itemize}
 <%/extra_curricular%>

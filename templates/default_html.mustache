@@ -1,13 +1,10 @@
-<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="public/css/screen.css" />
-<link rel="stylesheet" type="text/css" href="public/css/mobile.css" />
 <div id="page">
 {{#bio_data}}
 	<div id="top-contact">
+		{{#qr_code}}
+		<img class="contact-qr" src="{{qr_code}}" alt="Contact QR code">
+		{{/qr_code}}
 		<div class="contact-details">
-			{{#qr_code}}
-			<img src="{{qr_code}}" width="10%" style="position: absolute; right: 29%; top: 4%">
-			{{/qr_code}}
 			{{#email}}
 			<div class="icon-envelope icon-square"></div> {{email}}<br />
 			{{/email}}
@@ -15,11 +12,11 @@
 			<div class="icon-phone icon-square"></div> {{phone}}<br />
 			{{/phone}}
 			{{#github}}
-			<div class="icon-github icon-square"></div><a href="{{github}}"> {{github}}</a>
+			<div class="icon-github icon-square"></div><a href="{{github_url}}"> {{github}}</a>
 			{{/github}}
 		</div>
 	</div>
-	
+
 	<h1 class="emphnext" style="font-size:3em">{{firstname}} {{familyname}}</h1>
 	{{#stars}}
 	<span class="stars" style="clear:left">
@@ -31,7 +28,7 @@
 	<br/><br/>
 
 	{{#summary}}
-	<h2><div class="icon-user icon-square"></div> Objectives</h2>
+	<h2><span class="icon-user icon-square"></span> Objectives</h2>
 	<ul>
 		{{#points}}
 		<li style="list-style-type: square">{{{.}}}</li>
@@ -40,12 +37,14 @@
 	{{/summary}}
 
 	{{#education}}
-	<h2><div class="icon-mortar-board icon-rect"></div> ##education##</h2>
+	<h2><span class="icon-mortar-board icon-rect"></span> ##education##</h2>
 		{{#schools}}
 		<b style="float: left; margin-bottom: 0">{{institution}}</b>
 		<p style="float: right; margin-bottom: 0">{{year}}</p>
 		<p style="clear:left; float: left; margin-bottom: 0">{{degree}}</p>
+		{{#show_gpa}}
 		<i style="float: right; margin-bottom: 0">Cumulative GPA: {{gpa}}</i>
+		{{/show_gpa}}
 		{{/schools}}
 		<ul style="clear:both">
 			{{#details}}
@@ -56,7 +55,7 @@
 	{{/education}}
 
 	{{#experience}}
-	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
+	<h2><span class="icon-briefcase icon-square"></span> ##experience##</h2>
 	<ul>
 		{{#items}}
 		<li><b>{{title}}</b>,&nbsp;{{{organization}}}{{#location}}, {{{location}}}{{/location}}
@@ -79,7 +78,7 @@
 	{{/experience}}
 
 	{{#research_experience}}
-	<h2><div class="icon-mortar-board icon-square"></div> ##research_experience##</h2>
+	<h2><span class="icon-mortar-board icon-square"></span> ##research_experience##</h2>
 	<ul>
 		{{#items}}
 		<li>
@@ -97,7 +96,7 @@
 	{{/research_experience}}
 
 	{{#leadership_experience}}
-	<h2><div class="icon-institution icon-square"></div> Leadership Experience</h2>
+	<h2><span class="icon-institution icon-square"></span> Leadership Experience</h2>
 	<ul>
 		{{#items}}
 		<li>
@@ -114,7 +113,7 @@
 	{{/leadership_experience}}
 
 	{{#extra_curricular}}
-	<h2><div class="icon-bookmark icon-square"></div> ##extra_curricular##</h2>
+	<h2><span class="icon-bookmark icon-square"></span> ##extra_curricular##</h2>
 	<ul>
 		{{#items}}
 		<li>
@@ -126,7 +125,7 @@
 	{{/extra_curricular}}
 
 	{{#projects}}
-	<h2><div class="icon-gear icon-square"></div> Projects</h2>
+	<h2><span class="icon-gear icon-square"></span> Projects</h2>
 	<ul>
 		{{#items}}
 		<li>
@@ -136,12 +135,12 @@
 				<li>{{{.}}}</li>
 				{{/points}}
 				{{#technology_used}}
-				<li>##technology_used##: 
+				<li>##technology_used##:
 					{{#tools}}
 					<span class="label label-default">{{name}}</span>
 					{{/tools}}
 				</li>
-				{{/technology_used}}			
+				{{/technology_used}}
 			</ul>
 		</li>
 		{{/items}}
@@ -149,23 +148,23 @@
 	{{/projects}}
 
 	{{#papers}}
-	<h2><div class="icon-edit icon-square"></div> ##papers##</h2>
+	<h2><span class="icon-edit icon-square"></span> ##papers##</h2>
 	<ul>
 		{{#items}}
 		<li>
-			<p style="font-weight:bold; margin-bottom:0">{{title}}</p> 
-			<p style="float: left; margin-bottom:0.3em">{{authors}}</p> 
+			<p style="font-weight:bold; margin-bottom:0">{{title}}</p>
+			<p style="float: left; margin-bottom:0.3em">{{authors}}</p>
 			<p style="float: right; margin-bottom:0.3em">{{{misc}}}</p>
 		</li>
 		{{/items}}
 	</ul>
 	{{/papers}}
-	
+
 	{{#skills}}
-	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
+	<h2><span class="icon-th-list icon-square"></span> ##skills##</h2>
 	<ul class="languages">
 		{{#details}}
-		<li>{{type}}: 
+		<li>{{type}}:
 			{{#items}}
 			<span class="label label-default">{{name}}</span>
 			{{/items}}
@@ -175,7 +174,7 @@
 	{{/skills}}
 
 	{{#other_interests}}
-	<h2><div class="icon-music icon-square"></div> Other Interests</h2>
+	<h2><span class="icon-music icon-square"></span> Other Interests</h2>
 	<ul>
 		{{#items}}
 		<li>{{{.}}}</li>
@@ -184,14 +183,14 @@
 	{{/other_interests}}
 
 	{{#contact}}
-	<h2><div class="icon-phone icon-square"></div> Hire Me</h2>
+	<h2><span class="icon-phone icon-square"></span> Hire Me</h2>
 	<ul>
 		<img src="{{src}}" width="50%">
 	</ul>
 	{{/contact}}
 
 	<br />
-	<div id="bottom-contact" text-size="80%">
+	<div id="bottom-contact">
 		{{#email}}
 		<div class="icon-envelope icon-square"></div> {{email}}<br />
 		{{/email}}
@@ -205,10 +204,3 @@
 </div>
 
 {{/bio_data}}
-
-{{#settings}}
-	{{#icons}}
-	<script src="public/js/grunticon.js"></script>
-	{{/icons}}
-{{/settings}}
-</div><!-- End Page -->

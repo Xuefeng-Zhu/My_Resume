@@ -23,8 +23,11 @@ module JsonResume
 
 		def add_linkedin_github_url
 			@hash["raw_website"] = @hash["bio_data"]["website"].sub(/^https?:\/\//,'') if @hash["bio_data"] && @hash["bio_data"]["website"]
-			@hash["linkedin_url"] = "http://linkedin.com/in/" + @hash["linkedin_id"] if @hash["linkedin_id"]
-			@hash["github_url"] = "http://github.com/" + @hash["github_id"] if @hash["github_id"]
+			@hash["linkedin_url"] = "https://linkedin.com/in/" + @hash["linkedin_id"] if @hash["linkedin_id"]
+			if @hash["github_id"]
+				@hash["github_url"] = "https://github.com/" + @hash["github_id"]
+				@hash["bio_data"]["github_url"] = @hash["github_url"] if @hash["bio_data"]
+			end
 		end
 
 		def add_last_marker_on_stars
@@ -86,7 +89,18 @@ module JsonResume
 
 		def purge_gpa
 			return if @hash['bio_data']['education'].nil?
-			@hash["bio_data"]["education"].delete("show_gpa") if is_false?(@hash["bio_data"]["education"]["show_gpa"]) || @hash["bio_data"]["education"]["schools"].all? {|sch| sch["gpa"].nil? || sch["gpa"].empty?} 
+			education = @hash["bio_data"]["education"]
+			schools = education["schools"] || []
+			has_gpa = schools.any? { |school| school["gpa"] && !school["gpa"].empty? }
+
+			if is_false?(education["show_gpa"])
+				schools.each { |school| school.delete("gpa") }
+				education.delete("show_gpa")
+			elsif has_gpa
+				education["show_gpa"] = true
+			else
+				education.delete("show_gpa")
+			end
 		end
 
 		def add_padding(course)
@@ -111,6 +125,7 @@ module JsonResume
 			add_last_marker_on_skills
 
 			add_last_marker_on_field 'experience'
+			add_last_marker_on_field 'projects'
 			add_last_marker_on_field 'other_projects'
 
 			purge_gpa
@@ -128,4 +143,3 @@ module JsonResume
 
 	end
 end    
-

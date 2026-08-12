@@ -70,7 +70,7 @@
 \section{\textsc{##experience##}}
 %    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
 	<%#items%>
-		\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
+		\cventry{<%from%> - <%to%>}{<%title%>}{<%organization%>}{<%location%>}{}{
 			{\footnotesize 
 				\begin{itemize}
 				<%#details%>\item <%& .%><%/details%>	
@@ -84,7 +84,7 @@
 	<%/items%>
 <%/experience%>
 
-<%#other_projects%>
+<%#projects%>
 \section{\textsc{##other_projects##}}
 	<%#items%>
 		\cvitem{\textbullet}{<%& headline%>}
@@ -102,13 +102,13 @@
 		}
 		\vspace*{-0.5cm}
 	<%/items%>
-<%/other_projects%>
+<%/projects%>
 
 <%#education%>
 \section{\textsc{##education##}}
 %    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
 <%#schools%>
-\cventry{<%graduation_year%>}{<%degree%><%#major%>, <%major%><%/major%>}{<%institution%>}{}{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}{}
+\cventry{<%year%>}{<%degree%><%#major%>, <%major%><%/major%>}{<%institution%>}{}{<%#show_gpa%>##gpa##: <%gpa%><%/show_gpa%>}{}
 <%/schools%>
 <%/education%>
 
@@ -139,7 +139,7 @@
 <%#research_experience%>
 \section{\textsc{##research_experience##}}
 	<%#items%>
-		\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
+		\cventry{<%from%> - <%to%>}{<%title%>}{<%supervisor%>}{<%location%>}{}{
 			{\footnotesize 
 				\begin{itemize}
 				<%#points%>\item <%& .%><%/points%>	
@@ -148,6 +148,19 @@
 		}
 	<%/items%>
 <%/research_experience%>
+
+<%#leadership_experience%>
+\section{\textsc{##leadership_experience##}}
+	<%#items%>
+		\cventry{<%from%> - <%to%>}{<%title%>}{}{}{}{
+			{\footnotesize
+				\begin{itemize}
+				<%#points%>\item <%& .%><%/points%>
+				\end{itemize}
+			}
+		}
+	<%/items%>
+<%/leadership_experience%>
 
 <%#patents%>
 \section{\textsc{##patents##}}
@@ -166,14 +179,14 @@
 <%#memberships%>
 \section{\textsc{##memberships##}}
 	<%#committees%>
-		\cvitem{\textbullet}{<%& .%>}
+		\cvitem{\textbullet}{<%title%><%#date%> (<%date%>)<%/date%>}
 	<%/committees%>
 <%/memberships%>
 
 <%#extra_curricular%>
 \section{\textsc{##extra_curricular##}}
 	<%#items%>
-		\cvitem{\textbullet}{<%& .%>}
+		\cvitem{\textbullet}{<%title%><%#date%> (<%date%>)<%/date%>}
 	<%/items%>
 <%/extra_curricular%>
 

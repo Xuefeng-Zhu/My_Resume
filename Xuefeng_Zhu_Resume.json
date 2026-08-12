@@ -7,7 +7,7 @@
   "linkedin_id": "xuefeng-zhu",
   "github_id": "Xuefeng-Zhu",
   "bio_data": {
-    "qr_code": "../contact.png",
+    "qr_code": "public/images/contact.png",
     "email": "frankzhu94@gmail.com",
     "phone": "+1 (217) 607-6680",
     "github": "github.com/Xuefeng-Zhu",
@@ -271,18 +271,6 @@
     },
     "extra_curricular": {
       "items": [
-        {
-          "title": "Bronze Tablet Recipient",
-          "date": "2016"
-        },
-        {
-          "title": "John R. Pasta Outstanding Undergraduate Award",
-          "date": "2015"
-        }
-      ]
-    },
-    "memberships": {
-      "committees": [
         {
           "title": "Bronze Tablet Recipient",
           "date": "2016"

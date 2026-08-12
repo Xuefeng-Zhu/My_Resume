@@ -5,7 +5,7 @@ require 'json_resume/formatter'
 describe "#reader" do
   context "when given a json file name" do
     it 'reads in the file' do
-      File.should_receive(:read).with('test.json').and_return("{\"test\":1}")
+      expect(File).to receive(:read).with('test.json').and_return("{\"test\":1}")
       reader = JsonResume::Reader.new 'test.json', {}
       expect(reader.hash).to eq({"test"=>1})
     end
@@ -14,6 +14,17 @@ describe "#reader" do
   context "when given a json string" do
     it 'reads in the string' do
       reader = JsonResume::Reader.new "{\"test\":1}", {}
+      expect(reader.hash).to eq({"test"=>1})
+    end
+  end
+
+  context "when given a JSON URL" do
+    it 'fetches the URL instead of treating it as a local file' do
+      url = 'https://example.com/resume.json'
+      expect(URI).to receive(:open).with(url).and_return("{\"test\":1}")
+
+      reader = JsonResume::Reader.new url, {}
+
       expect(reader.hash).to eq({"test"=>1})
     end
   end
@@ -30,4 +41,3 @@ describe "#reader" do
     end
   end
 end
-

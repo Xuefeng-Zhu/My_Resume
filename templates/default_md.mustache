@@ -1,6 +1,6 @@
 {{#bio_data}}
-##{{firstname}} {{familyname}}
-[{{website}}]({{website}}) {{#email}}`{{email}}`{{/email}} {{#phone}}`{{phone}}`{{/phone}}
+## {{firstname}} {{familyname}}
+{{#website}}[{{website}}]({{website}}) {{/website}}{{#email}}`{{email}}`{{/email}} {{#phone}}`{{phone}}`{{/phone}}{{#github_url}} [GitHub]({{github_url}}){{/github_url}}
 
 {{#stars}}
 {{#items}}{{name}}{{^last}} - {{/last}}{{/items}}
@@ -32,10 +32,10 @@
 
 {{#education}}
 ### ##education##
- ##degree## | ##major## | ##institution## | ##graduation_year##{{#show_gpa}} | ##gpa##{{/show_gpa}}
-:--:|:--:|:--:|:--:{{#show_gpa}}|:--:{{/show_gpa}}
+##degree## | ##institution## | ##graduation_year##{{#show_gpa}} | ##gpa##{{/show_gpa}}
+:--|:--|:--:{{#show_gpa}}|:--:{{/show_gpa}}
 {{#schools}}
-{{degree}} | {{major}} | {{institution}} | {{graduation_year}}{{#show_gpa}} | {{gpa}}{{/show_gpa}}
+{{degree}} | {{institution}} | {{year}}{{#show_gpa}} | {{gpa}}{{/show_gpa}}
 {{/schools}}
 {{/education}}
 
@@ -49,7 +49,7 @@
 {{#experience}}
 ### ##experience##
 {{#items}}
-* {{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}} ({{from}} – {{to}})
+* {{title}}, {{{organization}}}{{#location}}, {{{location}}}{{/location}} ({{from}} – {{to}})
 {{#details}}
     - {{{.}}}
 {{/details}}
@@ -59,7 +59,7 @@
 {{/items}}
 {{/experience}}
 
-{{#other_projects}}
+{{#projects}}
 ### ##other_projects##
 {{#items}}
 * {{{headline}}}
@@ -70,7 +70,7 @@
     - ##technology_used##: {{#tools}}`{{name}}` {{/tools}}
 {{/technology_used}}
 {{/items}}
-{{/other_projects}}
+{{/projects}}
 
 {{#grad_courses}}
 ### ##grad_courses##
@@ -93,12 +93,22 @@
 {{#research_experience}}
 ### ##research_experience##
 {{#items}}
-* {{title}}, {{{organisation}}} ({{from}} – {{to}})
+* {{title}}{{#supervisor}}, supervised by {{{supervisor}}}{{/supervisor}} ({{from}} – {{to}})
 {{#points}}
     - {{{.}}}
 {{/points}}
 {{/items}}
 {{/research_experience}}
+
+{{#leadership_experience}}
+### ##leadership_experience##
+{{#items}}
+* {{title}} ({{from}} – {{to}})
+{{#points}}
+    - {{{.}}}
+{{/points}}
+{{/items}}
+{{/leadership_experience}}
 
 {{#patents}}
 ### ##patents##
@@ -117,14 +127,14 @@
 {{#memberships}}
 ### ##memberships##
 {{#committees}}
-* {{{.}}}
+* {{title}}{{#date}} ({{date}}){{/date}}
 {{/committees}}
 {{/memberships}}
 
 {{#extra_curricular}}
 ### ##extra_curricular##
 {{#items}}
-* {{{.}}}
+* {{title}}{{#date}} ({{date}}){{/date}}
 {{/items}}
 {{/extra_curricular}}
 {{/bio_data}}

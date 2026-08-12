@@ -481,10 +481,23 @@ img.maruku-png { }
 	color:#FFF;
 }
 
-.contact-details {
+#top-contact {
+	align-items: flex-start;
+	display: flex;
 	float: right;
-	width: 14em;
+	gap: 0.75em;
+}
+
+.contact-qr {
+	flex: 0 0 auto;
+	height: 5em;
+	width: 5em;
+}
+
+.contact-details {
 	font-size: 80%;
+	overflow-wrap: anywhere;
+	width: 14em;
 }
 
 .emphnext {

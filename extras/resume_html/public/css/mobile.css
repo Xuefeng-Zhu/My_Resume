@@ -24,4 +24,8 @@
 	width: 50em;
 	font-size: 80%;
 	}
+	.right {
+	display: block;
+	float: none;
+	}
 }
