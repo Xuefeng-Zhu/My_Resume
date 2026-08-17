@@ -1,0 +1,71 @@
+@page {
+	size: Letter;
+	margin: 0.45in;
+}
+
+html,
+body {
+	background: white !important;
+}
+
+body {
+	margin: 0;
+}
+
+#site {
+	line-height: 1.5em;
+	margin: 0 !important;
+	max-width: none !important;
+}
+
+#page {
+	background: white !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+}
+
+#footer {
+	display: none !important;
+}
+
+#page > h2 {
+	break-after: avoid-page;
+	page-break-after: avoid;
+}
+
+#page > ul > li {
+	break-inside: avoid-page;
+	page-break-inside: avoid;
+}
+
+.resume-section-keep {
+	break-inside: avoid-page;
+	page-break-inside: avoid;
+}
+
+a[href]:after {
+	content: none !important;
+}
+
+.label {
+	background-color: #777 !important;
+	border: 0 !important;
+	border-radius: 0.25em;
+	color: white !important;
+	display: inline;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	padding: 0.2em 0.6em 0.3em;
+	text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+[class^="icon-"],
+[class*=" icon-"],
+.label {
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important;
+}

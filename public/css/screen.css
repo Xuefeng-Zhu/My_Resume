@@ -481,10 +481,23 @@ img.maruku-png { }
 	color:#FFF;
 }
 
-.contact-details {
+#top-contact {
+	align-items: flex-start;
+	display: flex;
 	float: right;
-	width: 14em;
+	gap: 0.75em;
+}
+
+.contact-qr {
+	flex: 0 0 auto;
+	height: 5em;
+	width: 5em;
+}
+
+.contact-details {
 	font-size: 80%;
+	overflow-wrap: anywhere;
+	width: 14em;
 }
 
 .emphnext {
@@ -510,6 +523,27 @@ img.maruku-png { }
 
 .education {
 	font-size: 90%;
+}
+
+.education-details {
+	clear: both;
+}
+
+.resume-entry-header {
+	align-items: baseline;
+	display: flex;
+	gap: 1em;
+	justify-content: space-between;
+}
+
+.resume-entry-title {
+	min-width: 0;
+}
+
+.resume-entry-date {
+	flex: 0 0 auto;
+	text-align: right;
+	white-space: nowrap;
 }
 
 .right {

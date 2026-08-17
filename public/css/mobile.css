@@ -24,4 +24,16 @@
 	width: 50em;
 	font-size: 80%;
 	}
+	.right {
+	display: block;
+	float: none;
+	}
+	.resume-entry-header {
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 0;
+	}
+	.resume-entry-date {
+	text-align: left;
+	}
 }
