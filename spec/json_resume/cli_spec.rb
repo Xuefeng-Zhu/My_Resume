@@ -51,8 +51,18 @@ describe 'json_resume CLI' do
       index_html = File.read(index_path)
 
       expect(index_html).to include('Xuefeng Zhu')
-      expect(index_html).to include('Senior Software Engineer')
+      expect(index_html).to include('Software Engineer')
       expect(index_html).to include('href="https://github.com/Xuefeng-Zhu"')
+      expect(index_html).to include('href="https://github.com/Xuefeng-Zhu/OpenSlot"')
+      expect(index_html).to include('href="https://github.com/Xuefeng-Zhu/PromptDock"')
+      expect(index_html).to include('href="https://github.com/Xuefeng-Zhu/InboxPilot"')
+      expect(index_html).to include('href="https://github.com/Xuefeng-Zhu/ChronoGuard"')
+      expect(index_html).to include('href="https://github.com/Xuefeng-Zhu/SheetSQL"')
+      project_positions = %w[InboxPilot ChronoGuard OpenSlot PromptDock SheetSQL].map do |project|
+        index_html.index(">#{project}</a>")
+      end
+      expect(project_positions).to eq(project_positions.sort)
+      expect(index_html).not_to include('Emergency-Triage')
       expect(index_html).to include('src="public/images/contact.png"')
       expect(index_html).not_to include('RESUME_CONTENT')
       expect(index_html).not_to include('code.jquery.com')
@@ -96,11 +106,14 @@ describe 'json_resume CLI' do
       expect(markdown).to start_with("## Xuefeng Zhu\n")
 
       [markdown, latex].each do |output|
-        expect(output).to include('ChainScale')
+        expect(output).to include('Microsoft')
         expect(output).to include('May 2016')
-        expect(output).to include('Google Sheet based SQL Engine')
-        expect(output).to include('Zahra Mohagehgh')
-        expect(output.scan('Bronze Tablet Recipient').length).to eq(1)
+        expect(output).to include('OpenSlot')
+        expect(output).to include('PromptDock')
+        expect(output).to include('InboxPilot')
+        expect(output).to include('ChronoGuard')
+        expect(output).to include('SheetSQL')
+        expect(output).not_to include('Emergency-Triage')
       end
     end
   end
